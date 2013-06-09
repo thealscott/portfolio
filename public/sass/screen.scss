@@ -9,14 +9,14 @@
 
 @import "base";
 
-@media screen and (min-width: 480px;) {
+@media screen and (min-width: 480px) {
 	@import "480";
 }
 
-@media screen and (min-width: 768px;) {
+@media screen and (min-width: 768px) {
 	@import "768";
 }
 
-@media screen and (min-width: 960px;) {
+@media screen and (min-width: 960px) {
 	@import "960";
 }
