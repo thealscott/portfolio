@@ -3,11 +3,12 @@
 class BaseController extends Controller {
 
 	protected $format;
-	protected $layout = 'layouts.default';
+	protected $layout = 'layouts.';
 
 	public function __construct()
 	{
 		$this->format = Input::get('format', 'html');
+		$this->layout .= Input::get('layout', 'default');
 	}
 
 

@@ -45,7 +45,7 @@
 </head>
 <body>
     <div class="welcome">
-    	{{ $content }}
+        <?php echo $content; ?>
     <div>
 </body>
 </html>
