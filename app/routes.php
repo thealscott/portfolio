@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
 
-
-Route::get('/home.json', 'HomeController@index_json');
 
 Route::controller('home', 'HomeController');
+Route::controller('/', 'HomeController');
