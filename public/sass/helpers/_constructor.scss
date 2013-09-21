@@ -1,6 +1,0 @@
-@mixin construct() {
-	@include typography;
-	@include buttons;
-
-	@content;
-}
