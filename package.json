@@ -1,0 +1,21 @@
+{
+  "name": "thealscott",
+  "version": "0.0.0",
+  "description": "Portfolio",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thealscott/portfolio.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/thealscott/portfolio/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  }
+}
