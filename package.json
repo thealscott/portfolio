@@ -16,6 +16,7 @@
     "url": "https://github.com/thealscott/portfolio/issues"
   },
   "devDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "grunt-sassquatch": "~0.2.6"
   }
 }
