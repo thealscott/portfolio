@@ -1,0 +1,69 @@
+@mixin typography() {
+
+	html {
+		font-size:90%;
+		font-family: 'Ubuntu Mono', sans-serif;
+		color:$charcoal;
+		* {
+			line-height: 1.4em;
+		}
+	}
+
+	h1 {
+		@include font-size(16);
+		font-family: 'Press Start 2P', cursive;
+		margin-bottom: 1em;
+	}
+
+	h2 {
+		@include font-size(12);
+		font-family: 'Press Start 2P', cursive;
+		margin-bottom: 1em;
+	}
+
+	h3 {
+		@include font-size(10);
+		font-family: 'Press Start 2P', cursive;
+		margin-bottom: 1em;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+	em {
+		font-style: italic;
+	}
+
+	p {
+		@include font-size(12);
+		margin-bottom: 1em;
+	}
+
+	a {
+		@include single-transition(all, 0.3s);
+
+		color:$charcoal;
+		background:$med_blue;
+		text-decoration: none;
+
+		padding:0.2em 0.1em;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background:$blue;
+		}
+	}
+
+	button, .button {
+		font-family: 'Press Start 2P', cursive;
+	}
+
+	.copyright_symbol {
+		font-size:1.5em;
+	}
+
+    %typography_example {
+    }
+}

@@ -1,0 +1,78 @@
+@mixin default_page_base() {
+
+	html {
+		@include box-sizing(border-box); 
+		overflow-x: hidden;
+		// @include background-image(linear-gradient($light_blue 90%, #009922 90%, #009922 90.5%, #1DF64D 90.5%, #1DF64D 92%, #875117 92%, #875117 92%));
+		background:$light_blue;
+		min-height: 100%;
+		// border:3px solid $blue;
+		// border-right:none;
+		// border-bottom:none;
+	}
+
+	footer {
+		@include box-sizing(border-box);
+		@include box-shadow(
+			0 -5px 0 $green,
+			0 -10px 0 $med_green,
+			0 -15px 0 $bright_green
+		);
+		position:absolute;
+		bottom:0;
+		min-height: 50px;
+		padding:1em;
+		width:calc(100% - 3px);
+		background:$dark_brown;
+		border-top:10px $brown solid;
+		color:white;
+
+		.copyright {
+			float:right;
+		}
+	}
+
+	.wrapper {
+		@include box-sizing(border-box);	
+		min-width:320px;
+		max-width:90%;
+		margin:auto;
+		position:relative;
+		padding:0.5rem;
+
+	}
+
+	#logo {
+		$imageWidth: 60px;
+		$imageHeight: 96px;
+
+		$modifier: 1.5;
+
+		$displayWidth: $imageWidth/$modifier;
+		$displayHeight: $imageHeight/$modifier;
+		
+		background: url("../images/avatar.png") left center no-repeat;
+		background-size: $displayWidth $displayHeight;
+
+		min-width: $displayWidth;
+		min-height: $displayHeight;
+
+		padding-left:$displayWidth + 16px;
+		line-height:$displayHeight;
+
+		margin-bottom:1rem;
+
+		a {
+			@include chunk(10, $blue);
+		}
+	}
+
+	.cloud {
+		position:absolute;
+
+		div {
+			position:absolute;
+			background:rgba(255,255,255,0.5);
+		}
+	}
+}

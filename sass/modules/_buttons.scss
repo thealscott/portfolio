@@ -1,0 +1,42 @@
+@mixin buttons() {
+
+	button,
+	.button {
+		$chunk_depth:5;
+
+		@include single-transition(all, 0.3s);
+		@include chunk($chunk_depth, $charcoal);
+
+		display:inline-block;
+		outline: none;
+		position:relative;
+		-webkit-appearance: none;
+		border:3px $charcoal solid;
+		background:$med_blue;
+		cursor:pointer;
+		padding:2px 4px;
+		margin-bottom:1em;
+
+		&:hover,
+		&:focus {
+			background:$blue;			
+		}
+
+		&:active {
+			
+			top:#{$chunk_depth}px;
+			left:#{$chunk_depth}px;
+			@include box-shadow(none);
+		}
+	}
+
+
+    %large_button {
+    	@extend .button;
+
+    	@include font-size(14);
+
+    	min-width:280px;
+    	padding:5px 10px;
+    }
+}

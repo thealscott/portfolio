@@ -1,0 +1,48 @@
+@mixin font-size($size) {
+	font-size:#{$size*0.9}px;
+	font-size:#{$size/10}rem;
+}
+
+@mixin chunk($depth, $color) {
+	$list:();
+	@for $i from 1 through $depth {
+		$list: append($list, #{$i}px #{$i}px 0px $color, $separator:comma);
+	}
+	@include box-shadow($list);
+	margin-right:#{$depth}px;
+}
+
+@mixin speech_bubble() {
+	@include box-sizing(border-box);
+	@include chunk(5, $charcoal);
+	background:white;
+	border:3px $charcoal solid;
+	padding:1em;
+	position:relative;
+
+	&:before {
+		content:"";
+		display:block;
+		position:absolute;
+		top:-20px;
+		left:-3px;
+		width:0;
+		height:0;
+		border:10px $charcoal solid;
+		border-top-color:transparent;
+		border-right-color:transparent;
+	}
+
+	&:after {
+		content:"";
+		display:block;
+		position:absolute;
+		top:-12px;
+		left:0;
+		width:0;
+		height:0;
+		border:7px white solid;
+		border-top-color:transparent;
+		border-right-color:transparent;
+	}
+}

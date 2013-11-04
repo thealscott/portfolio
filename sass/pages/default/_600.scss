@@ -1,0 +1,22 @@
+@mixin default_page_600() {
+
+	#logo {
+		$imageWidth: 60px;
+		$imageHeight: 96px;
+
+		$modifier: 1;
+
+		$displayWidth: $imageWidth/$modifier;
+		$displayHeight: $imageHeight/$modifier;
+
+		@include font-size(20);
+		
+		background-size: $displayWidth $displayHeight;
+
+		min-width: $displayWidth;
+		min-height: $displayHeight;
+
+		padding-left:$displayWidth + 16px;
+		line-height:$displayHeight;
+	}
+}

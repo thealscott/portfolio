@@ -1,0 +1,22 @@
+{
+  "name": "thealscott.com",
+  "version": "0.0.0",
+  "description": "My personal site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thealscott/portfolio.git"
+  },
+  "author": "Al Scott",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/thealscott/portfolio/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-sassquatch" : "~0.2"
+
+  }
+}
