@@ -66,7 +66,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 4, ../../sass/modules/_buttons.scss */
 button,
 .button,
-#home_page nav button {
+#about_me #work_link {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -88,15 +88,15 @@ button,
 /* line 21, ../../sass/modules/_buttons.scss */
 button:hover, button:focus,
 .button:hover,
-#home_page nav button:hover,
+#about_me #work_link:hover,
 .button:focus,
-#home_page nav button:focus {
+#about_me #work_link:focus {
   background: #4e90cc;
 }
 /* line 25, ../../sass/modules/_buttons.scss */
 button:active,
 .button:active,
-#home_page nav button:active {
+#about_me #work_link:active {
   top: 5px;
   left: 5px;
   -webkit-box-shadow: none;
@@ -104,13 +104,21 @@ button:active,
   box-shadow: none;
 }
 
-/* line 34, ../../sass/modules/_buttons.scss */
-#home_page nav .button,
-#home_page nav button {
+/* line 33, ../../sass/modules/_buttons.scss */
+#about_me #work_link, #contact_me .button {
   font-size: 12.6px;
   font-size: 1.4rem;
   min-width: 280px;
   padding: 5px 10px;
+}
+
+/* line 41, ../../sass/modules/_buttons.scss */
+#about_me #work_link {
+  background: #ff7388;
+}
+/* line 46, ../../sass/modules/_buttons.scss */
+#about_me #work_link:hover, #about_me #work_link:focus {
+  background: #e33d2b;
 }
 
 /* line 3, ../../sass/modules/_typography.scss */
@@ -182,15 +190,69 @@ a:hover, a:focus, a:active {
 }
 
 /* line 59, ../../sass/modules/_typography.scss */
-button, .button,
-#home_page nav button {
+ul {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 1px 1px 0px #bebebe, 2px 2px 0px #bebebe, 3px 3px 0px #bebebe, 4px 4px 0px #bebebe, 5px 5px 0px #bebebe;
+  -moz-box-shadow: 1px 1px 0px #bebebe, 2px 2px 0px #bebebe, 3px 3px 0px #bebebe, 4px 4px 0px #bebebe, 5px 5px 0px #bebebe;
+  box-shadow: 1px 1px 0px #bebebe, 2px 2px 0px #bebebe, 3px 3px 0px #bebebe, 4px 4px 0px #bebebe, 5px 5px 0px #bebebe;
+  margin-right: 5px;
+  max-width: 306px;
+  background: white;
+  margin-bottom: 2rem;
+}
+/* line 67, ../../sass/modules/_typography.scss */
+ul li {
+  list-style: square;
+  margin-left: 1.4em;
+}
+
+/* line 73, ../../sass/modules/_typography.scss */
+button, .button, #about_me #work_link {
   font-family: 'Press Start 2P', cursive;
 }
 
-/* line 63, ../../sass/modules/_typography.scss */
+/* line 77, ../../sass/modules/_typography.scss */
 .copyright_symbol {
   font-size: 1.5em;
   line-height: 1.1em;
+}
+
+/* line 82, ../../sass/modules/_typography.scss */
+#about_me h2, #contact_me h2 {
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+/* line 88, ../../sass/modules/_typography.scss */
+#about_me h2 {
+  -webkit-box-shadow: 1px 1px 0px #e33d2b, 2px 2px 0px #e33d2b, 3px 3px 0px #e33d2b, 4px 4px 0px #e33d2b, 5px 5px 0px #e33d2b;
+  -moz-box-shadow: 1px 1px 0px #e33d2b, 2px 2px 0px #e33d2b, 3px 3px 0px #e33d2b, 4px 4px 0px #e33d2b, 5px 5px 0px #e33d2b;
+  box-shadow: 1px 1px 0px #e33d2b, 2px 2px 0px #e33d2b, 3px 3px 0px #e33d2b, 4px 4px 0px #e33d2b, 5px 5px 0px #e33d2b;
+  margin-right: 5px;
+  background: #ff7388;
+}
+/* line 94, ../../sass/modules/_typography.scss */
+#about_me h2:hover, #about_me h2:focus {
+  background: #e33d2b;
+}
+
+/* line 99, ../../sass/modules/_typography.scss */
+#contact_me h2 {
+  -webkit-box-shadow: 1px 1px 0px #4e90cc, 2px 2px 0px #4e90cc, 3px 3px 0px #4e90cc, 4px 4px 0px #4e90cc, 5px 5px 0px #4e90cc;
+  -moz-box-shadow: 1px 1px 0px #4e90cc, 2px 2px 0px #4e90cc, 3px 3px 0px #4e90cc, 4px 4px 0px #4e90cc, 5px 5px 0px #4e90cc;
+  box-shadow: 1px 1px 0px #4e90cc, 2px 2px 0px #4e90cc, 3px 3px 0px #4e90cc, 4px 4px 0px #4e90cc, 5px 5px 0px #4e90cc;
+  margin-right: 5px;
+  background: #92cbff;
+}
+/* line 105, ../../sass/modules/_typography.scss */
+#contact_me h2:hover, #contact_me h2:focus {
+  background: #4e90cc;
 }
 
 /* line 3, ../../sass/pages/default/_base.scss */
@@ -270,6 +332,8 @@ footer .copyright {
 
 /* line 59, ../../sass/pages/default/_base.scss */
 .wrapper {
+  overflow: hidden;
+  *zoom: 1;
   -webkit-transition: -webkit-transform 1s;
   -moz-transition: -moz-transform 1s;
   -o-transition: -o-transform 1s;
@@ -284,7 +348,7 @@ footer .copyright {
   padding: 0.5rem;
 }
 
-/* line 70, ../../sass/pages/default/_base.scss */
+/* line 71, ../../sass/pages/default/_base.scss */
 #logo {
   background: url("../images/avatar.png") left center no-repeat;
   background-size: 40px 64px;
@@ -294,7 +358,7 @@ footer .copyright {
   line-height: 64px;
   margin-bottom: 1rem;
 }
-/* line 90, ../../sass/pages/default/_base.scss */
+/* line 91, ../../sass/pages/default/_base.scss */
 #logo a {
   -webkit-box-shadow: 1px 1px 0px #4e90cc, 2px 2px 0px #4e90cc, 3px 3px 0px #4e90cc, 4px 4px 0px #4e90cc, 5px 5px 0px #4e90cc, 6px 6px 0px #4e90cc, 7px 7px 0px #4e90cc, 8px 8px 0px #4e90cc, 9px 9px 0px #4e90cc, 10px 10px 0px #4e90cc;
   -moz-box-shadow: 1px 1px 0px #4e90cc, 2px 2px 0px #4e90cc, 3px 3px 0px #4e90cc, 4px 4px 0px #4e90cc, 5px 5px 0px #4e90cc, 6px 6px 0px #4e90cc, 7px 7px 0px #4e90cc, 8px 8px 0px #4e90cc, 9px 9px 0px #4e90cc, 10px 10px 0px #4e90cc;
@@ -302,13 +366,13 @@ footer .copyright {
   margin-right: 10px;
 }
 
-/* line 95, ../../sass/pages/default/_base.scss */
+/* line 96, ../../sass/pages/default/_base.scss */
 .cloud {
   display: none;
 }
 
-/* line 3, ../../sass/pages/home/_base.scss */
-#home_page #intro {
+/* line 100, ../../sass/pages/default/_base.scss */
+#intro {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -324,12 +388,11 @@ footer .copyright {
   border: 3px #383838 solid;
   padding: 1em;
   position: relative;
-  margin-left: 34px;
-  margin-right: 0px;
+  margin: 0 0 2em 34px;
   max-width: 600px;
 }
 /* line 23, ../../sass/helpers/_utilities.scss */
-#home_page #intro:before {
+#intro:before {
   content: "";
   display: block;
   position: absolute;
@@ -342,7 +405,7 @@ footer .copyright {
   border-right-color: transparent;
 }
 /* line 36, ../../sass/helpers/_utilities.scss */
-#home_page #intro:after {
+#intro:after {
   content: "";
   display: block;
   position: absolute;
@@ -353,4 +416,13 @@ footer .copyright {
   border: 7px white solid;
   border-top-color: transparent;
   border-right-color: transparent;
+}
+
+/* line 107, ../../sass/pages/default/_base.scss */
+section {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 2em;
+  width: 100%;
 }

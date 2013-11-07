@@ -57,6 +57,7 @@
 	}
 
 	.wrapper {
+		@include clearfix;
 		@include single-transition(transform, 1s);
 		@include box-sizing(border-box);	
 		min-width:320px;
@@ -94,5 +95,39 @@
 
 	.cloud {
 		display:none;
+	}
+
+	#intro {
+		@include single-transition(all, 0.3s);
+		@include speech_bubble;
+		margin:0 0 2em 34px;
+		max-width:600px;
+	}
+
+	section {
+		@include box-sizing(border-box);
+		margin-bottom: 2em;
+		width:100%;
+	}
+
+	#about_me {
+		h2 {
+			@extend %red_chunky_heading;
+		}
+
+		#work_link {
+			@extend %large_button;
+			@extend %red_button;
+		}
+	}
+
+	#contact_me {
+		h2 {
+			@extend %blue_chunky_heading;
+		}
+
+		.button {
+			@extend %large_button;
+		}
 	}
 }

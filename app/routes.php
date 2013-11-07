@@ -12,10 +12,11 @@
 */
 
 
+Route::controller('work', 'WorkController');
 
 Route::controller('home', 'HomeController');
 Route::controller('/', 'HomeController');
 
 
-Route::controller('work', 'WorkController');
-Route::get('work/{handle}', 'WorkController@showWork');
+
+// Route::controller('work/{handle}', 'WorkController@showWork');

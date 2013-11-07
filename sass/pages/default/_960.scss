@@ -1,2 +1,13 @@
 @mixin default_page_960() {
+
+	section {
+		float:left;
+		width:48%;
+		margin-right:2%;
+
+		&:nth-child(even) {
+			margin-right: 0;
+			margin-left: 2%;
+		}
+	}
 }

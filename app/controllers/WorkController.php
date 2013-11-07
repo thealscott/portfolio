@@ -21,4 +21,26 @@ class WorkController extends BaseController {
 
 		}
 	}
+
+	public function getShow($handle)
+    {
+    	$projects = [
+    		'ralph',
+    		'tropicana'
+    	];
+
+
+    	if (in_array($handle, $projects)) {
+    		$page_data = array(
+				'page_id' => 'work_page',
+				'handle' => $handle
+			);
+
+	        $this->layout->page_id = 'work_page';
+	        $this->layout->content = View::make('work.show', $page_data);
+    	}
+    	else {
+    		//TODO: work out how 404 routing and whatnot works in Laravel
+    	}
+    }
 }

@@ -30,13 +30,31 @@
 		}
 	}
 
-
     %large_button {
     	@extend .button;
-
     	@include font-size(14);
 
     	min-width:280px;
     	padding:5px 10px;
+    }
+
+    %red_button {
+    	@extend .button;
+    	background:$med_red;
+
+    	&:hover,
+		&:focus {
+			background:$red;			
+		}
+    }
+
+    %yellow_button {
+    	@extend .button;
+    	background:$med_yellow;
+
+    	&:hover,
+		&:focus {
+			background:$yellow;			
+		}
     }
 }

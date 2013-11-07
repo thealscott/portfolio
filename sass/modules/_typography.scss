@@ -56,6 +56,20 @@
 		}
 	}
 
+	ul {
+		@include box-sizing(border-box);
+		@include chunk(5, $med_grey);
+		max-width: 306px;
+		background:white;
+
+		// border:3px $charcoal solid;
+		margin-bottom: 2rem;
+		li {
+			list-style:square;
+			margin-left: 1.4em;
+		}
+	}
+
 	button, .button {
 		font-family: 'Press Start 2P', cursive;
 	}
@@ -65,6 +79,42 @@
 		line-height: 1.1em;
 	}
 
-    %typography_example {
+	%base_chunk {
+		@include single-transition(background, 0.3s);
+		padding:4px 8px;
+		text-align: center;
+	}
+
+    %red_chunky_heading {
+    	@extend %base_chunk;
+    	@include chunk(5, $red);
+    	background:$med_red;
+
+    	&:hover,
+    	&:focus {
+    		background:$red;
+    	}
+    }
+
+    %blue_chunky_heading {
+    	@extend %base_chunk;
+    	@include chunk(5, $blue);
+    	background:$med_blue;
+
+    	&:hover,
+    	&:focus {
+    		background:$blue;
+    	}
+    }
+
+    %yellow_chunky_heading {
+    	@extend %base_chunk;
+    	@include chunk(5, $yellow);
+    	background:$med_yellow;
+
+    	&:hover,
+    	&:focus {
+    		background:$yellow;
+    	}
     }
 }

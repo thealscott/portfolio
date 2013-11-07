@@ -105,11 +105,30 @@
   }
 
   /* line 59, ../../sass/modules/_typography.scss */
+  ul {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 1px 1px 0px #bebebe, 2px 2px 0px #bebebe, 3px 3px 0px #bebebe, 4px 4px 0px #bebebe, 5px 5px 0px #bebebe;
+    -moz-box-shadow: 1px 1px 0px #bebebe, 2px 2px 0px #bebebe, 3px 3px 0px #bebebe, 4px 4px 0px #bebebe, 5px 5px 0px #bebebe;
+    box-shadow: 1px 1px 0px #bebebe, 2px 2px 0px #bebebe, 3px 3px 0px #bebebe, 4px 4px 0px #bebebe, 5px 5px 0px #bebebe;
+    margin-right: 5px;
+    max-width: 306px;
+    background: white;
+    margin-bottom: 2rem;
+  }
+  /* line 67, ../../sass/modules/_typography.scss */
+  ul li {
+    list-style: square;
+    margin-left: 1.4em;
+  }
+
+  /* line 73, ../../sass/modules/_typography.scss */
   button, .button {
     font-family: 'Press Start 2P', cursive;
   }
 
-  /* line 63, ../../sass/modules/_typography.scss */
+  /* line 77, ../../sass/modules/_typography.scss */
   .copyright_symbol {
     font-size: 1.5em;
     line-height: 1.1em;
@@ -132,7 +151,7 @@
     -moz-transition: -moz-transform 2s;
     -o-transition: -o-transform 2s;
     transition: transform 2s;
-    position: absolute;
+    position: fixed;
     display: block;
   }
   /* line 28, ../../sass/pages/default/_600.scss */
