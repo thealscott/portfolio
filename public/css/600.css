@@ -112,6 +112,7 @@
   /* line 63, ../../sass/modules/_typography.scss */
   .copyright_symbol {
     font-size: 1.5em;
+    line-height: 1.1em;
   }
 
   /* line 3, ../../sass/pages/default/_600.scss */
@@ -123,6 +124,21 @@
     min-height: 96px;
     padding-left: 76px;
     line-height: 96px;
+  }
+
+  /* line 23, ../../sass/pages/default/_600.scss */
+  .cloud {
+    -webkit-transition: -webkit-transform 2s;
+    -moz-transition: -moz-transform 2s;
+    -o-transition: -o-transform 2s;
+    transition: transform 2s;
+    position: absolute;
+    display: block;
+  }
+  /* line 28, ../../sass/pages/default/_600.scss */
+  .cloud div {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
   }
 
   /* line 2, ../../sass/pages/home/_600.scss */

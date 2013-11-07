@@ -190,6 +190,7 @@ button, .button,
 /* line 63, ../../sass/modules/_typography.scss */
 .copyright_symbol {
   font-size: 1.5em;
+  line-height: 1.1em;
 }
 
 /* line 3, ../../sass/pages/default/_base.scss */
@@ -198,11 +199,54 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   overflow-x: hidden;
-  background: #bfe2ff;
+  background: black;
   min-height: 100%;
 }
+/* line 9, ../../sass/pages/default/_base.scss */
+html.loading {
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
+}
+/* line 12, ../../sass/pages/default/_base.scss */
+html.loading .wrapper {
+  -webkit-transform: translateY(-2000px);
+  -moz-transform: translateY(-2000px);
+  -ms-transform: translateY(-2000px);
+  -o-transform: translateY(-2000px);
+  transform: translateY(-2000px);
+}
+/* line 16, ../../sass/pages/default/_base.scss */
+html.loading .cloud {
+  -webkit-transform: translateX(-2000px);
+  -moz-transform: translateX(-2000px);
+  -ms-transform: translateX(-2000px);
+  -o-transform: translateX(-2000px);
+  transform: translateX(-2000px);
+}
+/* line 20, ../../sass/pages/default/_base.scss */
+html.loading:after {
+  content: "LOADING";
+  position: absolute;
+  font-size: 22.5px;
+  font-size: 2.5rem;
+  font-family: 'Press Start 2P', cursive;
+  top: calc(50% - 0.5em);
+  width: 100%;
+  text-align: center;
+  color: #ebd213;
+}
+/* line 32, ../../sass/pages/default/_base.scss */
+html.loaded {
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
+  background: #bfe2ff;
+}
 
-/* line 14, ../../sass/pages/default/_base.scss */
+/* line 38, ../../sass/pages/default/_base.scss */
 footer {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -210,33 +254,37 @@ footer {
   -webkit-box-shadow: 0 -5px 0 #459300, 0 -10px 0 #5fb811, 0 -15px 0 #78e815;
   -moz-box-shadow: 0 -5px 0 #459300, 0 -10px 0 #5fb811, 0 -15px 0 #78e815;
   box-shadow: 0 -5px 0 #459300, 0 -10px 0 #5fb811, 0 -15px 0 #78e815;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  min-height: 50px;
-  padding: 1em;
-  width: calc(100% - 3px);
+  padding: 0 0.5em;
+  width: 100%;
   background: #804901;
   border-top: 10px #a35c00 solid;
   color: white;
 }
-/* line 30, ../../sass/pages/default/_base.scss */
+/* line 53, ../../sass/pages/default/_base.scss */
 footer .copyright {
   float: right;
+  line-height: 1.1em;
 }
 
-/* line 35, ../../sass/pages/default/_base.scss */
+/* line 59, ../../sass/pages/default/_base.scss */
 .wrapper {
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   min-width: 320px;
   max-width: 90%;
-  margin: auto;
+  margin: 0 auto 3rem;
   position: relative;
   padding: 0.5rem;
 }
 
-/* line 45, ../../sass/pages/default/_base.scss */
+/* line 70, ../../sass/pages/default/_base.scss */
 #logo {
   background: url("../images/avatar.png") left center no-repeat;
   background-size: 40px 64px;
@@ -246,7 +294,7 @@ footer .copyright {
   line-height: 64px;
   margin-bottom: 1rem;
 }
-/* line 65, ../../sass/pages/default/_base.scss */
+/* line 90, ../../sass/pages/default/_base.scss */
 #logo a {
   -webkit-box-shadow: 1px 1px 0px #4e90cc, 2px 2px 0px #4e90cc, 3px 3px 0px #4e90cc, 4px 4px 0px #4e90cc, 5px 5px 0px #4e90cc, 6px 6px 0px #4e90cc, 7px 7px 0px #4e90cc, 8px 8px 0px #4e90cc, 9px 9px 0px #4e90cc, 10px 10px 0px #4e90cc;
   -moz-box-shadow: 1px 1px 0px #4e90cc, 2px 2px 0px #4e90cc, 3px 3px 0px #4e90cc, 4px 4px 0px #4e90cc, 5px 5px 0px #4e90cc, 6px 6px 0px #4e90cc, 7px 7px 0px #4e90cc, 8px 8px 0px #4e90cc, 9px 9px 0px #4e90cc, 10px 10px 0px #4e90cc;
@@ -254,14 +302,9 @@ footer .copyright {
   margin-right: 10px;
 }
 
-/* line 70, ../../sass/pages/default/_base.scss */
+/* line 95, ../../sass/pages/default/_base.scss */
 .cloud {
-  position: absolute;
-}
-/* line 73, ../../sass/pages/default/_base.scss */
-.cloud div {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.5);
+  display: none;
 }
 
 /* line 3, ../../sass/pages/home/_base.scss */

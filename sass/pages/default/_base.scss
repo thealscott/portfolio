@@ -3,12 +3,36 @@
 	html {
 		@include box-sizing(border-box); 
 		overflow-x: hidden;
-		// @include background-image(linear-gradient($light_blue 90%, #009922 90%, #009922 90.5%, #1DF64D 90.5%, #1DF64D 92%, #875117 92%, #875117 92%));
-		background:$light_blue;
+		background:black;
 		min-height: 100%;
-		// border:3px solid $blue;
-		// border-right:none;
-		// border-bottom:none;
+
+		&.loading {
+			@include single-transition(background, 1s);
+
+			.wrapper {
+				@include translateY(-2000px);
+			}
+
+			.cloud {
+				@include translateX(-2000px);
+			}
+
+			&:after {
+				content:"LOADING";
+				position:absolute;
+				@include font-size(25);
+				font-family: 'Press Start 2P', cursive;
+				top:calc(50% - 0.5em);
+				width:100%;
+				text-align: center;
+				color:$yellow;
+			}
+		}
+
+		&.loaded {
+			@include single-transition(background, 1s);
+			background:$light_blue;
+		}
 	}
 
 	footer {
@@ -18,25 +42,26 @@
 			0 -10px 0 $med_green,
 			0 -15px 0 $bright_green
 		);
-		position:absolute;
+		position:fixed;
 		bottom:0;
-		min-height: 50px;
-		padding:1em;
-		width:calc(100% - 3px);
+		padding:0 0.5em;
+		width:100%;
 		background:$dark_brown;
 		border-top:10px $brown solid;
 		color:white;
 
 		.copyright {
 			float:right;
+			line-height: 1.1em;
 		}
 	}
 
 	.wrapper {
+		@include single-transition(transform, 1s);
 		@include box-sizing(border-box);	
 		min-width:320px;
 		max-width:90%;
-		margin:auto;
+		margin:0 auto 3rem;
 		position:relative;
 		padding:0.5rem;
 
@@ -68,11 +93,6 @@
 	}
 
 	.cloud {
-		position:absolute;
-
-		div {
-			position:absolute;
-			background:rgba(255,255,255,0.5);
-		}
+		display:none;
 	}
 }

@@ -19,4 +19,15 @@
 		padding-left:$displayWidth + 16px;
 		line-height:$displayHeight;
 	}
+
+	.cloud {
+		@include single-transition(transform, 2s);
+		position:absolute;
+		display: block;
+
+		div {
+			position:absolute;
+			background:rgba(255,255,255,0.5);
+		}
+	}
 }

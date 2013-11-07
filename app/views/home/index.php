@@ -1,16 +1,20 @@
 <h2 id="intro" title="You like to read between the lines, huh?">
-	Hey everybody. My name is Al&nbsp;Scott, and I am a developer.
+	My name is Al&nbsp;Scott and this site is still being built, so don't be hatin'.
 </h2>
 
 <section>
 	<p>
-		For the last 4 years I have been working as a developer in digital advertising.
+		Eventually everything you see before you will be a banging new website. For now, it is just some deadend links and whimsical copy.
 	</p>
 
 
 	<nav>
 		<div>
-			<a href="#" class="button" target="_blank" title="Check out the stuff I have made">My Work</a>
+			<a href="#" class="button" target="_blank" title="Judge my life's efforts">My Work</a>
+		</div>
+
+		<div>
+			<a href="https://github.com/thealscott" class="button" target="_blank" title="Criticize my side projects on Github">Github</a>
 		</div>
 
 		<div>
@@ -18,7 +22,7 @@
 		</div>
 
 		<div>
-			<a href="https://github.com/thealscott" class="button" target="_blank" title="Criticize my side projects on Github">github</a>
+			<a href="uk.linkedin.com/pub/al-scott/53/17/681/" class="button" target="_blank" title="Stalk me on LinkedIn">LinkedIn</a>
 		</div>
 	</nav>
 </section>

@@ -1,45 +1,40 @@
 <!doctype html>
-<html lang="en">
+<!--[if IE 7 ]><html class="ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 ie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
-    <title>theAlScott.com</title>
+	
+	<meta charset="UTF-8">
+    <meta name="description" content="The portfolio and personal playground of Al Scott, Esq.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>theAlScott.co.uk</title>
+
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Press+Start+2P' rel='stylesheet' type='text/css'>
     <link href='/css/styles.css' rel='stylesheet' />
+
+    
+    <script>
+    // To prevent nasty popin, we add a loading class immediately.
+    // When everything is loaded, we remove for a nice transition.
+	var html = document.getElementsByTagName('html');
+	html = html[0];
+	html.classList.add('loading');
+	</script>
+
 </head>
 <body id="<?php echo $page_id; ?>">
 
-	<?php for ($n = 0; $n < rand(4, 8); ++$n) :?>
-	<div class="cloud" 
-		style="
-			top:<?php echo rand(0, 80);?>%;
-			left:<?php echo rand(0, 80);?>%;
-		">
-		<?php for ($i = 0; $i < rand(3, 5); ++$i) :?>
-		<div style="
-				width:<?php echo rand(50, 150);?>px;
-				height:<?php echo rand(20, 60);?>px;
-				top:<?php echo rand(0, 50);?>px;
-				left:<?php echo rand(0, 50);?>px;
-			">
-		</div>
-		<?php endfor;?>
-	</div>
-	<?php endfor; ?>
-
+	<?php echo View::make('partials._clouds'); ?>
 
     <div class="wrapper">
-    	<header>
-    		<h1 id="logo" title="This is a surprisingly accurate rendering of me">
-				<a href="/" title="Head on back to the home page">theAlScott</a>
-			</h1>
-    	</header>
+    	<?php echo View::make('partials._header'); ?>
         <?php echo $content; ?>
     </div>
 
-	<footer>
-		<div class="copyright">
-			<span class="copyright_symbol">&copy;</span> 2013 Al Scott
-		</div>
-	</footer>
+	<?php echo View::make('partials._footer'); ?>
+
+	<?php echo View::make('partials._scripts'); ?>
 </body>
 </html>

@@ -112,5 +112,6 @@
   /* line 63, ../../sass/modules/_typography.scss */
   .copyright_symbol {
     font-size: 1.5em;
+    line-height: 1.1em;
   }
 }

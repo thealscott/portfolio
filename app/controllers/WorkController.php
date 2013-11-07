@@ -1,11 +1,11 @@
 <?php
 
-class HomeController extends BaseController {
+class WorkController extends BaseController {
 
 	public function getIndex()
 	{
 		$page_data = array(
-			'page_id' => 'home_page'
+			'page_id' => 'work_page'
 		);
 
 		if ($this->format == 'json')
@@ -14,8 +14,8 @@ class HomeController extends BaseController {
 		}
 		else 
 		{	
-			$this->layout->page_id = 'home_page';
-			$this->layout->content = View::make('home.index', $page_data);
+			$this->layout->page_id = 'work_page';
+			$this->layout->content = View::make('work.index', $page_data);
 											// ->nest('partial_test', 'partials._clouds')
 											// ->nest('header', 'partials._header');	
 
