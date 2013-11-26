@@ -1,2 +1,36 @@
 @mixin work_page_base() {
+	.project_link {
+		
+		margin-bottom:1.6rem;
+		
+
+		a {
+			@extend .button;
+			height:6em;
+			position:relative;
+			display: block;
+			padding:1em;
+			background:white;
+			margin-bottom: 0;
+		}
+
+		h3 {
+			margin-bottom:0;
+			position:absolute;
+			bottom:1em;
+			left:1em;
+		}
+		
+		&#nivea_giftwrap_link {
+			a {
+				@include project_link($nivea_blue, $nivea_pink, $nivea_light_blue);
+			}
+		}
+
+		&#trop_quality_link {
+			a {
+				@include project_link($trop_orange, $trop_green, $trop_light_orange);
+			}
+		}
+	}
 }

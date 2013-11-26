@@ -1,3 +1,12 @@
 @mixin home_page_base() {
+	#about_me {
+		h2 {
+			@extend %red_chunky_heading;
+		}
 
+		#work_link {
+			@extend %large_button;
+			@extend %red_button;
+		}
+	}
 }

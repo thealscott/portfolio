@@ -1,2 +1,31 @@
 @mixin work_page_960() {
+
+	.project_link {
+		width:100%;
+		margin-right:0;
+
+		&:nth-child(even) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	// 	&:nth-child(4n - 1) {
+	// 		margin-right: 1%;
+	// 	}
+
+	// 	&:nth-child(4n) {
+	// 		margin-right: 0;
+	// 		margin-left: 1%;
+	// 	}
+	// }
+
+	// #contact_me {
+	// 	float:left;
+	// 	width:48%;
+	// 	margin-right:2%;
+
+	// 	margin-left:0;
+	// 	clear:both;
+	// }
 }

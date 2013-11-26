@@ -24,10 +24,10 @@ class WorkController extends BaseController {
 
 	public function getShow($handle)
     {
-    	$projects = [
+    	$projects = array(
     		'ralph',
     		'tropicana'
-    	];
+    	);
 
 
     	if (in_array($handle, $projects)) {

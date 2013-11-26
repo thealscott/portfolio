@@ -164,4 +164,21 @@
   #home_page #intro {
     margin-left: 50px;
   }
+
+  /* line 3, ../../sass/pages/work/_600.scss */
+  #work_page #project_list {
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 7, ../../sass/pages/work/_600.scss */
+  #work_page .project_link {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+  }
+  /* line 12, ../../sass/pages/work/_600.scss */
+  #work_page .project_link:nth-child(even) {
+    margin-right: 0;
+    margin-left: 2%;
+  }
 }

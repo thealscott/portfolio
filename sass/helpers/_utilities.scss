@@ -12,6 +12,26 @@
 	margin-right:#{$depth}px;
 }
 
+@mixin project_link($primary, $secondary, $tertiary) {
+	@include chunk(5, $secondary);
+
+	border-color:$secondary;
+	background:$primary;
+
+	h2, h3 {
+		color:white;
+	}
+
+	&:hover,
+	&:focus {
+		background:$tertiary;
+	}
+
+	&:active {
+		@include box-shadow(none);
+	}
+}
+
 @mixin speech_bubble() {
 	@include box-sizing(border-box);
 	@include chunk(5, $charcoal);

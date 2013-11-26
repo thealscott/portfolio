@@ -13,7 +13,7 @@
 		</div>
 
 		<div>
-			<a href="uk.linkedin.com/pub/al-scott/53/17/681/" class="button" target="_blank" title="Stalk me on LinkedIn">LinkedIn</a>
+			<a href="http://uk.linkedin.com/pub/al-scott/53/17/681/" class="button" target="_blank" title="Stalk me on LinkedIn">LinkedIn</a>
 		</div>
 
 		<div>

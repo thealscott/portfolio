@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -66,7 +66,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 4, ../../sass/modules/_buttons.scss */
 button,
 .button,
-#about_me #work_link {
+#home_page #about_me #work_link,
+#work_page .project_link a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -88,15 +89,18 @@ button,
 /* line 21, ../../sass/modules/_buttons.scss */
 button:hover, button:focus,
 .button:hover,
-#about_me #work_link:hover,
+#home_page #about_me #work_link:hover,
+#work_page .project_link a:hover,
 .button:focus,
-#about_me #work_link:focus {
+#home_page #about_me #work_link:focus,
+#work_page .project_link a:focus {
   background: #4e90cc;
 }
 /* line 25, ../../sass/modules/_buttons.scss */
 button:active,
 .button:active,
-#about_me #work_link:active {
+#home_page #about_me #work_link:active,
+#work_page .project_link a:active {
   top: 5px;
   left: 5px;
   -webkit-box-shadow: none;
@@ -105,7 +109,7 @@ button:active,
 }
 
 /* line 33, ../../sass/modules/_buttons.scss */
-#about_me #work_link, #contact_me .button {
+#contact_me .button, #contact_me #work_page .project_link a, #work_page .project_link #contact_me a, #home_page #about_me #work_link {
   font-size: 12.6px;
   font-size: 1.4rem;
   min-width: 280px;
@@ -113,11 +117,11 @@ button:active,
 }
 
 /* line 41, ../../sass/modules/_buttons.scss */
-#about_me #work_link {
+#home_page #about_me #work_link {
   background: #ff7388;
 }
 /* line 46, ../../sass/modules/_buttons.scss */
-#about_me #work_link:hover, #about_me #work_link:focus {
+#home_page #about_me #work_link:hover, #home_page #about_me #work_link:focus {
   background: #e33d2b;
 }
 
@@ -209,7 +213,7 @@ ul li {
 }
 
 /* line 73, ../../sass/modules/_typography.scss */
-button, .button, #about_me #work_link {
+button, .button, #home_page #about_me #work_link, #work_page .project_link a {
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -220,7 +224,7 @@ button, .button, #about_me #work_link {
 }
 
 /* line 82, ../../sass/modules/_typography.scss */
-#about_me h2, #contact_me h2 {
+#home_page #about_me h2, #contact_me h2 {
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
   -o-transition: background 0.3s;
@@ -230,7 +234,7 @@ button, .button, #about_me #work_link {
 }
 
 /* line 88, ../../sass/modules/_typography.scss */
-#about_me h2 {
+#home_page #about_me h2 {
   -webkit-box-shadow: 1px 1px 0px #e33d2b, 2px 2px 0px #e33d2b, 3px 3px 0px #e33d2b, 4px 4px 0px #e33d2b, 5px 5px 0px #e33d2b;
   -moz-box-shadow: 1px 1px 0px #e33d2b, 2px 2px 0px #e33d2b, 3px 3px 0px #e33d2b, 4px 4px 0px #e33d2b, 5px 5px 0px #e33d2b;
   box-shadow: 1px 1px 0px #e33d2b, 2px 2px 0px #e33d2b, 3px 3px 0px #e33d2b, 4px 4px 0px #e33d2b, 5px 5px 0px #e33d2b;
@@ -238,7 +242,7 @@ button, .button, #about_me #work_link {
   background: #ff7388;
 }
 /* line 94, ../../sass/modules/_typography.scss */
-#about_me h2:hover, #about_me h2:focus {
+#home_page #about_me h2:hover, #home_page #about_me h2:focus {
   background: #e33d2b;
 }
 
@@ -388,10 +392,10 @@ footer .copyright {
   border: 3px #383838 solid;
   padding: 1em;
   position: relative;
-  margin: 0 0 2em 34px;
+  margin: 0 6px 2em 34px;
   max-width: 600px;
 }
-/* line 23, ../../sass/helpers/_utilities.scss */
+/* line 43, ../../sass/helpers/_utilities.scss */
 #intro:before {
   content: "";
   display: block;
@@ -404,7 +408,7 @@ footer .copyright {
   border-top-color: transparent;
   border-right-color: transparent;
 }
-/* line 36, ../../sass/helpers/_utilities.scss */
+/* line 56, ../../sass/helpers/_utilities.scss */
 #intro:after {
   content: "";
   display: block;
@@ -425,4 +429,71 @@ section {
   box-sizing: border-box;
   margin-bottom: 2em;
   width: 100%;
+}
+
+/* line 2, ../../sass/pages/work/_base.scss */
+#work_page .project_link {
+  margin-bottom: 1.6rem;
+}
+/* line 7, ../../sass/pages/work/_base.scss */
+#work_page .project_link a {
+  height: 6em;
+  position: relative;
+  display: block;
+  padding: 1em;
+  background: white;
+  margin-bottom: 0;
+}
+/* line 17, ../../sass/pages/work/_base.scss */
+#work_page .project_link h3 {
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+}
+/* line 25, ../../sass/pages/work/_base.scss */
+#work_page .project_link#nivea_giftwrap_link a {
+  -webkit-box-shadow: 1px 1px 0px #733f87, 2px 2px 0px #733f87, 3px 3px 0px #733f87, 4px 4px 0px #733f87, 5px 5px 0px #733f87;
+  -moz-box-shadow: 1px 1px 0px #733f87, 2px 2px 0px #733f87, 3px 3px 0px #733f87, 4px 4px 0px #733f87, 5px 5px 0px #733f87;
+  box-shadow: 1px 1px 0px #733f87, 2px 2px 0px #733f87, 3px 3px 0px #733f87, 4px 4px 0px #733f87, 5px 5px 0px #733f87;
+  margin-right: 5px;
+  border-color: #733f87;
+  background: #09508f;
+}
+/* line 21, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#nivea_giftwrap_link a h2, #work_page .project_link#nivea_giftwrap_link a h3 {
+  color: white;
+}
+/* line 26, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#nivea_giftwrap_link a:hover, #work_page .project_link#nivea_giftwrap_link a:focus {
+  background: #0074bf;
+}
+/* line 30, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#nivea_giftwrap_link a:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 31, ../../sass/pages/work/_base.scss */
+#work_page .project_link#trop_quality_link a {
+  -webkit-box-shadow: 1px 1px 0px #017717, 2px 2px 0px #017717, 3px 3px 0px #017717, 4px 4px 0px #017717, 5px 5px 0px #017717;
+  -moz-box-shadow: 1px 1px 0px #017717, 2px 2px 0px #017717, 3px 3px 0px #017717, 4px 4px 0px #017717, 5px 5px 0px #017717;
+  box-shadow: 1px 1px 0px #017717, 2px 2px 0px #017717, 3px 3px 0px #017717, 4px 4px 0px #017717, 5px 5px 0px #017717;
+  margin-right: 5px;
+  border-color: #017717;
+  background: #e48102;
+}
+/* line 21, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#trop_quality_link a h2, #work_page .project_link#trop_quality_link a h3 {
+  color: white;
+}
+/* line 26, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#trop_quality_link a:hover, #work_page .project_link#trop_quality_link a:focus {
+  background: #dfa74a;
+}
+/* line 30, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#trop_quality_link a:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
