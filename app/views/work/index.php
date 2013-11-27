@@ -4,46 +4,15 @@
 
 <section id="project_list">
     
-    <div class="project_link" id="trop_quality_link">
-        <a href="#">
-            
-            <h2>From Seed to Squeezed</h2>
-            <h3>Tropicana</h3>
-        
+    <?php foreach ($project_handles as $project_handle) : ?>
+    <div class="project_link" id="<?php echo $project_handle; ?>_link">
+        <a href="/work/show/<?php echo $project_handle; ?>">
+            <h2><?php echo Lang::get('projects.'.$project_handle.'_name'); ?></h2>
+            <h3><?php echo Lang::get('projects.'.$project_handle.'_client'); ?></h3>
         </a>
     </div>
-    <div class="project_link" id="nivea_giftwrap_link">
-        <a href="#">
-            
-            <h2>Wrapped in Friendship</h2>
-            <h3>Nivea</h3>
-        
-        </a>
-    </div>
-    <div class="project_link">
-        <a href="#">
-            
-            <h2>Project Name</h2>
-            <h3>Client Name</h3>
-        
-        </a>
-    </div>
-    <div class="project_link">
-        <a href="#">
-            
-            <h2>Project Name</h2>
-            <h3>Client Name</h3>
-        
-        </a>
-    </div>
-    <div class="project_link">
-        <a href="#">
-            
-            <h2>Project Name</h2>
-            <h3>Client Name</h3>
-        
-        </a>
-    </div>
+    <?php endforeach; ?>
+    
 </section>
 
 <?php echo View::make('partials._contact'); ?>

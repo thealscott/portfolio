@@ -1,11 +1,19 @@
 <?php
 
 class WorkController extends BaseController {
+    
+    public $project_handles = array(
+        'disney',
+        'tropicana',
+        'smirnoff',
+        'nivea'
+    );
 
 	public function getIndex()
 	{
 		$page_data = array(
-			'page_id' => 'work_page'
+			'page_id' => 'work_page',
+            'project_handles' => $this->project_handles
 		);
 
 		if ($this->format == 'json')
@@ -16,21 +24,13 @@ class WorkController extends BaseController {
 		{	
 			$this->layout->page_id = 'work_page';
 			$this->layout->content = View::make('work.index', $page_data);
-											// ->nest('partial_test', 'partials._clouds')
-											// ->nest('header', 'partials._header');	
-
 		}
 	}
 
 	public function getShow($handle)
     {
-    	$projects = array(
-    		'ralph',
-    		'tropicana'
-    	);
 
-
-    	if (in_array($handle, $projects)) {
+    	if (in_array($handle, $this->project_handles)) {
     		$page_data = array(
 				'page_id' => 'work_page',
 				'handle' => $handle

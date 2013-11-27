@@ -12,14 +12,14 @@
 	margin-right:#{$depth}px;
 }
 
-@mixin project_link($primary, $secondary, $tertiary) {
+@mixin project_link($primary, $secondary, $tertiary, $text) {
 	@include chunk(5, $secondary);
 
 	border-color:$secondary;
 	background:$primary;
 
 	h2, h3 {
-		color:white;
+		color:$text;
 	}
 
 	&:hover,

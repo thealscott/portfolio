@@ -1,0 +1,1 @@
+<?php echo Lang::get('projects.disney_name'); ?>

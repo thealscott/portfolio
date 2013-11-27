@@ -451,8 +451,8 @@ section {
   bottom: 1em;
   left: 1em;
 }
-/* line 25, ../../sass/pages/work/_base.scss */
-#work_page .project_link#nivea_giftwrap_link a {
+/* line 24, ../../sass/pages/work/_base.scss */
+#work_page .project_link#nivea_link a {
   -webkit-box-shadow: 1px 1px 0px #733f87, 2px 2px 0px #733f87, 3px 3px 0px #733f87, 4px 4px 0px #733f87, 5px 5px 0px #733f87;
   -moz-box-shadow: 1px 1px 0px #733f87, 2px 2px 0px #733f87, 3px 3px 0px #733f87, 4px 4px 0px #733f87, 5px 5px 0px #733f87;
   box-shadow: 1px 1px 0px #733f87, 2px 2px 0px #733f87, 3px 3px 0px #733f87, 4px 4px 0px #733f87, 5px 5px 0px #733f87;
@@ -461,21 +461,21 @@ section {
   background: #09508f;
 }
 /* line 21, ../../sass/helpers/_utilities.scss */
-#work_page .project_link#nivea_giftwrap_link a h2, #work_page .project_link#nivea_giftwrap_link a h3 {
+#work_page .project_link#nivea_link a h2, #work_page .project_link#nivea_link a h3 {
   color: white;
 }
 /* line 26, ../../sass/helpers/_utilities.scss */
-#work_page .project_link#nivea_giftwrap_link a:hover, #work_page .project_link#nivea_giftwrap_link a:focus {
-  background: #0074bf;
+#work_page .project_link#nivea_link a:hover, #work_page .project_link#nivea_link a:focus {
+  background: #002d6e;
 }
 /* line 30, ../../sass/helpers/_utilities.scss */
-#work_page .project_link#nivea_giftwrap_link a:active {
+#work_page .project_link#nivea_link a:active {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 31, ../../sass/pages/work/_base.scss */
-#work_page .project_link#trop_quality_link a {
+/* line 28, ../../sass/pages/work/_base.scss */
+#work_page .project_link#tropicana_link a {
   -webkit-box-shadow: 1px 1px 0px #017717, 2px 2px 0px #017717, 3px 3px 0px #017717, 4px 4px 0px #017717, 5px 5px 0px #017717;
   -moz-box-shadow: 1px 1px 0px #017717, 2px 2px 0px #017717, 3px 3px 0px #017717, 4px 4px 0px #017717, 5px 5px 0px #017717;
   box-shadow: 1px 1px 0px #017717, 2px 2px 0px #017717, 3px 3px 0px #017717, 4px 4px 0px #017717, 5px 5px 0px #017717;
@@ -484,15 +484,61 @@ section {
   background: #e48102;
 }
 /* line 21, ../../sass/helpers/_utilities.scss */
-#work_page .project_link#trop_quality_link a h2, #work_page .project_link#trop_quality_link a h3 {
+#work_page .project_link#tropicana_link a h2, #work_page .project_link#tropicana_link a h3 {
   color: white;
 }
 /* line 26, ../../sass/helpers/_utilities.scss */
-#work_page .project_link#trop_quality_link a:hover, #work_page .project_link#trop_quality_link a:focus {
-  background: #dfa74a;
+#work_page .project_link#tropicana_link a:hover, #work_page .project_link#tropicana_link a:focus {
+  background: #e54000;
 }
 /* line 30, ../../sass/helpers/_utilities.scss */
-#work_page .project_link#trop_quality_link a:active {
+#work_page .project_link#tropicana_link a:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 32, ../../sass/pages/work/_base.scss */
+#work_page .project_link#disney_link a {
+  -webkit-box-shadow: 1px 1px 0px #ffc409, 2px 2px 0px #ffc409, 3px 3px 0px #ffc409, 4px 4px 0px #ffc409, 5px 5px 0px #ffc409;
+  -moz-box-shadow: 1px 1px 0px #ffc409, 2px 2px 0px #ffc409, 3px 3px 0px #ffc409, 4px 4px 0px #ffc409, 5px 5px 0px #ffc409;
+  box-shadow: 1px 1px 0px #ffc409, 2px 2px 0px #ffc409, 3px 3px 0px #ffc409, 4px 4px 0px #ffc409, 5px 5px 0px #ffc409;
+  margin-right: 5px;
+  border-color: #ffc409;
+  background: black;
+}
+/* line 21, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#disney_link a h2, #work_page .project_link#disney_link a h3 {
+  color: #ec1b21;
+}
+/* line 26, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#disney_link a:hover, #work_page .project_link#disney_link a:focus {
+  background: #1d1d1d;
+}
+/* line 30, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#disney_link a:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 37, ../../sass/pages/work/_base.scss */
+#work_page .project_link#smirnoff_link a {
+  -webkit-box-shadow: 1px 1px 0px #8e1025, 2px 2px 0px #8e1025, 3px 3px 0px #8e1025, 4px 4px 0px #8e1025, 5px 5px 0px #8e1025;
+  -moz-box-shadow: 1px 1px 0px #8e1025, 2px 2px 0px #8e1025, 3px 3px 0px #8e1025, 4px 4px 0px #8e1025, 5px 5px 0px #8e1025;
+  box-shadow: 1px 1px 0px #8e1025, 2px 2px 0px #8e1025, 3px 3px 0px #8e1025, 4px 4px 0px #8e1025, 5px 5px 0px #8e1025;
+  margin-right: 5px;
+  border-color: #8e1025;
+  background: #eff1f0;
+}
+/* line 21, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#smirnoff_link a h2, #work_page .project_link#smirnoff_link a h3 {
+  color: #383838;
+}
+/* line 26, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#smirnoff_link a:hover, #work_page .project_link#smirnoff_link a:focus {
+  background: #e1e1e1;
+}
+/* line 30, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#smirnoff_link a:active {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;

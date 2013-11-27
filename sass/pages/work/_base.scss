@@ -21,16 +21,21 @@
 			left:1em;
 		}
 		
-		&#nivea_giftwrap_link {
-			a {
-				@include project_link($nivea_blue, $nivea_pink, $nivea_light_blue);
-			}
+		&#nivea_link a {
+			@include project_link($nivea_blue, $nivea_pink, $nivea_dark_blue, white);
 		}
 
-		&#trop_quality_link {
-			a {
-				@include project_link($trop_orange, $trop_green, $trop_light_orange);
-			}
+		&#tropicana_link a {
+			@include project_link($trop_orange, $trop_green, $trop_dark_orange, white);
+		}
+
+		&#disney_link a {
+			//@include project_link($disney_brown, $disney_dark_brown, black, $disney_yellow);
+			@include project_link(black, $disney_dark_yellow, $dark_charcoal, $disney_red);
+		}
+
+		&#smirnoff_link a {
+			@include project_link($smirnoff_silver, $smirnoff_red, $smirnoff_dark_silver, $charcoal);
 		}
 	}
 }
