@@ -107,8 +107,18 @@ button:active,
   -moz-box-shadow: none;
   box-shadow: none;
 }
+/* line 32, ../../sass/modules/_buttons.scss */
+button:after,
+.button:after,
+#home_page #about_me #work_link:after,
+#work_page .project_link a:after {
+  content: ">";
+  position: absolute;
+  bottom: calc(50% - 0.75em);
+  right: 5px;
+}
 
-/* line 33, ../../sass/modules/_buttons.scss */
+/* line 40, ../../sass/modules/_buttons.scss */
 #contact_me .button, #contact_me #work_page .project_link a, #work_page .project_link #contact_me a, #home_page #about_me #work_link {
   font-size: 12.6px;
   font-size: 1.4rem;
@@ -116,11 +126,11 @@ button:active,
   padding: 5px 10px;
 }
 
-/* line 41, ../../sass/modules/_buttons.scss */
+/* line 48, ../../sass/modules/_buttons.scss */
 #home_page #about_me #work_link {
   background: #ff7388;
 }
-/* line 46, ../../sass/modules/_buttons.scss */
+/* line 53, ../../sass/modules/_buttons.scss */
 #home_page #about_me #work_link:hover, #home_page #about_me #work_link:focus {
   background: #e33d2b;
 }
@@ -395,7 +405,7 @@ footer .copyright {
   margin: 0 6px 2em 34px;
   max-width: 600px;
 }
-/* line 43, ../../sass/helpers/_utilities.scss */
+/* line 50, ../../sass/helpers/_utilities.scss */
 #intro:before {
   content: "";
   display: block;
@@ -408,7 +418,7 @@ footer .copyright {
   border-top-color: transparent;
   border-right-color: transparent;
 }
-/* line 56, ../../sass/helpers/_utilities.scss */
+/* line 63, ../../sass/helpers/_utilities.scss */
 #intro:after {
   content: "";
   display: block;
@@ -474,6 +484,14 @@ section {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+/* line 34, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#nivea_link a:after {
+  font-size: 14.4px;
+  font-size: 1.6rem;
+  color: white;
+  bottom: 1rem;
+  right: 0.5rem;
+}
 /* line 28, ../../sass/pages/work/_base.scss */
 #work_page .project_link#tropicana_link a {
   -webkit-box-shadow: 1px 1px 0px #017717, 2px 2px 0px #017717, 3px 3px 0px #017717, 4px 4px 0px #017717, 5px 5px 0px #017717;
@@ -496,6 +514,14 @@ section {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+/* line 34, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#tropicana_link a:after {
+  font-size: 14.4px;
+  font-size: 1.6rem;
+  color: white;
+  bottom: 1rem;
+  right: 0.5rem;
 }
 /* line 32, ../../sass/pages/work/_base.scss */
 #work_page .project_link#disney_link a {
@@ -520,6 +546,14 @@ section {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+/* line 34, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#disney_link a:after {
+  font-size: 14.4px;
+  font-size: 1.6rem;
+  color: #ec1b21;
+  bottom: 1rem;
+  right: 0.5rem;
+}
 /* line 37, ../../sass/pages/work/_base.scss */
 #work_page .project_link#smirnoff_link a {
   -webkit-box-shadow: 1px 1px 0px #8e1025, 2px 2px 0px #8e1025, 3px 3px 0px #8e1025, 4px 4px 0px #8e1025, 5px 5px 0px #8e1025;
@@ -542,4 +576,12 @@ section {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+/* line 34, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#smirnoff_link a:after {
+  font-size: 14.4px;
+  font-size: 1.6rem;
+  color: #383838;
+  bottom: 1rem;
+  right: 0.5rem;
 }

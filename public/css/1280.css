@@ -35,6 +35,14 @@
     -moz-box-shadow: none;
     box-shadow: none;
   }
+  /* line 32, ../../sass/modules/_buttons.scss */
+  button:after,
+  .button:after {
+    content: ">";
+    position: absolute;
+    bottom: calc(50% - 0.75em);
+    right: 5px;
+  }
 
   /* line 3, ../../sass/modules/_typography.scss */
   html {

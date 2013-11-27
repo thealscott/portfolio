@@ -28,6 +28,13 @@
 			left:#{$chunk_depth}px;
 			@include box-shadow(none);
 		}
+
+		&:after {
+			content:">";
+			position:absolute;
+			bottom:calc(50% - 0.75em);
+			right:5px;
+		}
 	}
 
     %large_button {

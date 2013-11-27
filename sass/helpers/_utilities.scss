@@ -30,6 +30,13 @@
 	&:active {
 		@include box-shadow(none);
 	}
+
+	&:after {
+		@include font-size(16);
+		color:$text;
+		bottom:1rem;
+		right:0.5rem;
+	}
 }
 
 @mixin speech_bubble() {
