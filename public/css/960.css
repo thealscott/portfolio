@@ -197,4 +197,8 @@
     margin-left: 0;
     margin-right: 0;
   }
+  /* line 13, ../../sass/pages/work/_960.scss */
+  #work_page .contact_me_wrapper {
+    clear: left;
+  }
 }

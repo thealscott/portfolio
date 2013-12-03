@@ -12,28 +12,28 @@
 <section>
   
     <div class="button_wrapper">
-        <a href="/work" target="_blank" class="button back_button">
+        <a href="/work" class="button back_button">
             Back
         </a>
     </div>
     
     <figure>
-        <img src="/images/work/wreck_it_ralph-1.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        <img src="/images/work/wreck_it_ralph-3.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
     </figure>
     
     <figure>
-        <img src="/images/work/wreck_it_ralph-2.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        <img src="/images/work/wreck_it_ralph-4.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
     </figure>
     
 </section>
 
 <section>
     <figure>
-        <img src="/images/work/wreck_it_ralph-3.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        <img src="/images/work/wreck_it_ralph-1.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
     </figure>
     
     
     <figure>
-        <img src="/images/work/wreck_it_ralph-4.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        <img src="/images/work/wreck_it_ralph-2.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
     </figure>
 </section>
