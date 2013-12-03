@@ -1,4 +1,8 @@
 @mixin work_page_base() {
+	section {
+		margin-bottom:0;
+	}
+
 	.project_link {
 		
 		margin-bottom:1.6rem;

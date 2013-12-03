@@ -1,2 +1,5 @@
 @mixin default_page_1280() {
+	.wrapper {
+		max-width:1280px;
+	}
 }

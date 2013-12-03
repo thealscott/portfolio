@@ -10,7 +10,7 @@
 			@include single-transition(background, 1s);
 
 			.wrapper {
-				@include translateY(-2000px);
+				@include translateX(4000px);
 			}
 
 			.cloud {
@@ -56,9 +56,20 @@
 		}
 	}
 
+	.video_wrapper, figure {
+		video, img {
+			@include box-sizing(border-box);
+			@include chunk(5, $charcoal);
+			border:3px solid $charcoal;
+			margin-bottom:1em;
+			width:100%;
+			height:auto;
+		}
+	}
+
 	.wrapper {
 		@include clearfix;
-		@include single-transition(transform, 1s);
+		@include single-transition(all, 1s);
 		@include box-sizing(border-box);	
 		min-width:320px;
 		max-width:90%;
@@ -102,6 +113,14 @@
 		@include speech_bubble;
 		margin:0 6px 2em 34px;
 		max-width:600px;
+		display:inline-block;
+	}
+
+	#intro_addendum {
+		@extend #intro;
+		@include speech_bubble_addendum;
+		display:block;
+		
 	}
 
 	section {

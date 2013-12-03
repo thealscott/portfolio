@@ -14,7 +14,7 @@
 		border:3px $charcoal solid;
 		background:$med_blue;
 		cursor:pointer;
-		padding:2px 4px;
+		padding:2px 24px 2px 4px;
 		margin-bottom:1em;
 
 		&:hover,
@@ -36,6 +36,8 @@
 			right:5px;
 		}
 	}
+
+
 
     %large_button {
     	@extend .button;
@@ -63,5 +65,19 @@
 		&:focus {
 			background:$yellow;			
 		}
-    }
+    }  
+
+    .back_button {
+		@extend %yellow_button;
+
+		padding-left:24px;
+		padding-right:4px;
+
+		&:after {
+			content:"<";
+			position:absolute;
+			bottom:calc(50% - 0.75em);
+			left:5px;
+		}
+	}  
 }

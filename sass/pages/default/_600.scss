@@ -23,7 +23,9 @@
 	#intro {
 		margin-left:50px;
 	}
-
+	#intro_addendum {
+		margin-left:80px;
+	}
 	.cloud {
 		@include single-transition(transform, 2s);
 		position:fixed;
