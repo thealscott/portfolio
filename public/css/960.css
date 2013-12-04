@@ -169,18 +169,23 @@
     line-height: 1.1em;
   }
 
-  /* line 3, ../../sass/pages/default/_960.scss */
+  /* line 4, ../../sass/pages/default/_960.scss */
+  .video_wrapper video, .video_wrapper img, figure video, figure img {
+    margin-bottom: 2em;
+  }
+
+  /* line 9, ../../sass/pages/default/_960.scss */
   section {
     float: left;
     width: 48%;
     margin-right: 2%;
   }
-  /* line 8, ../../sass/pages/default/_960.scss */
+  /* line 14, ../../sass/pages/default/_960.scss */
   section:nth-child(even) {
     margin-right: 0;
     margin-left: 2%;
   }
-  /* line 13, ../../sass/pages/default/_960.scss */
+  /* line 19, ../../sass/pages/default/_960.scss */
   section.double_column {
     width: 100%;
     margin-left: 0;

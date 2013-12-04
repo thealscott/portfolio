@@ -1,5 +1,11 @@
 @mixin default_page_960() {
 
+	.video_wrapper, figure {
+		video, img {
+			margin-bottom:2em;
+		}
+	}
+
 	section {
 		float:left;
 		width:48%;

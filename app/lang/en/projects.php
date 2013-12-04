@@ -15,7 +15,7 @@ return array(
 	'tropicana_name' => 'From Seed to&nbsp;Squeezed',
     
     'smirnoff_client' => 'Smirnoff',
-	'smirnoff_name' => 'NEP Battle',
+	'smirnoff_name' => 'NEP Venue Battle',
     
     'nivea_client' => 'Nivea',
 	'nivea_name' => 'Wrapped&nbsp;in Friendship',

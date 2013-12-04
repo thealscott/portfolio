@@ -1,11 +1,11 @@
 <header>
     <h2 id="intro" title="You like to read between the lines, huh?">
         Smirnoff<br>
-        Nightlife Exchange Project<br>
+        NEP Venue Battle<br>
     </h2>
 
     <p id="intro_addendum">
-        We built this Facebook app to support Smirnoff's NEP campaign, allowing users to vote for their town to receive a massive Smirnoff party. The twist was that for every person they got to vote as well, they earned a countervote, which could be used to vote down opposing&nbsp;towns.
+        We built this Facebook app to support Smirnoff's Nightlife Exchange Project, allowing users to vote for their town to receive a massive Smirnoff party. The twist was that for every person they got to vote as well, they earned a countervote, which could be used to vote down opposing&nbsp;towns.
     </p>
 </header>
 
