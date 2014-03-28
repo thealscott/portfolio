@@ -146,6 +146,11 @@
   }
 
   /* line 23, ../../sass/pages/default/_600.scss */
+  #intro {
+    margin-left: 50px;
+  }
+
+  /* line 27, ../../sass/pages/default/_600.scss */
   .cloud {
     -webkit-transition: -webkit-transform 2s;
     -moz-transition: -moz-transform 2s;
@@ -154,7 +159,7 @@
     position: fixed;
     display: block;
   }
-  /* line 28, ../../sass/pages/default/_600.scss */
+  /* line 32, ../../sass/pages/default/_600.scss */
   .cloud div {
     position: absolute;
     background: rgba(255, 255, 255, 0.5);

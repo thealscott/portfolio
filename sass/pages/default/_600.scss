@@ -20,6 +20,10 @@
 		line-height:$displayHeight;
 	}
 
+	#intro {
+		margin-left:50px;
+	}
+
 	.cloud {
 		@include single-transition(transform, 2s);
 		position:fixed;
