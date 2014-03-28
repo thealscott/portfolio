@@ -1,5 +1,5 @@
 <h2 id="intro" title="You like to read between the lines, huh?">
-	Naturally you want to see my work. I've picked some of the more interesting bits for your perusal below.
+	Hi there! Welcome to my portfolio. Below you can see a few examples of cool things I've worked on. You can also find out a little more about me or get in touch, if you fancy&nbsp;it.
 </h2>
 
 <section id="project_list">
@@ -15,4 +15,5 @@
     
 </section>
 
+<?php echo View::make('partials._about_link'); ?>
 <?php echo View::make('partials._contact'); ?>

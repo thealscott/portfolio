@@ -1,6 +1,24 @@
 #work_page {
 	section {
 		margin-bottom:0;
+
+		@include breakpoint($tablet) {
+			figure {
+				position:relative;
+				margin:auto;
+				max-width:480px;
+			}
+
+			&.double_column figure {
+				max-width: none;
+			}
+		}
+
+		@include breakpoint($narrow) {
+			figure {
+				max-width: none;
+			}
+		}
 	}
 
 	.project_link {
@@ -76,6 +94,11 @@
 			@include clearfix;
 		}
 	}	
+
+	#contact_me,
+	#about_me_link {
+		margin-bottom:2em;
+	}
 
 	.contact_me_wrapper {
 		@include breakpoint($narrow) {

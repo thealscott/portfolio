@@ -33,10 +33,6 @@ html {
 	}
 }
 
-body {
-	margin:0;
-}
-
 footer {
 	@include box-sizing(border-box);
 	@include box-shadow(
@@ -58,10 +54,27 @@ footer {
 	}
 }
 
+figure {
+	a {
+		background:none;
+		border:0;
+		margin:0;
+		padding:0;
+		display:block;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background:none;
+		}
+	}
+}
+
 .video_wrapper, figure {
 	video, img {
 		@include box-sizing(border-box);
 		@include chunk(5, $charcoal);
+		background:$charcoal;
 		border:3px solid $charcoal;
 		margin-bottom:1em;
 		width:100%;
@@ -173,29 +186,55 @@ section {
 	width:100%;
 
 	@include breakpoint($narrow) {
-		float:left;
-		width:48%;
-		margin-right:2%;
-
-		&:nth-child(even) {
-			margin-right: 0;
-			margin-left: 2%;
-		}
+		@include float_columns;
 
 		&.double_column {
 			width:100%;
 			margin-left:0;
 			margin-right:0;
+
+			.sub_column {
+				@include float_columns;
+			}
+
+			& + section {
+				margin-left:0;
+				margin-right:2%;
+			}
 		}
 	}
 }
 
 #contact_me {
+	margin-bottom:2em;
+
 	h2 {
 		@extend %blue_chunky_heading;
 	}
 
 	.button {
 		@extend %large_button;
+	}
+}
+
+
+#about_me_link {
+	margin-bottom:2em;
+
+	h2 {
+		@extend %red_chunky_heading;
+	}
+
+	.button {
+		@extend %large_button;
+		@extend %red_button;
+	}
+}
+
+#about_me_link + #contact_me,
+#contact_me + #about_me_link {
+	@include breakpoint($narrow) {
+		margin-left:2%;
+		margin-right:0;
 	}
 }

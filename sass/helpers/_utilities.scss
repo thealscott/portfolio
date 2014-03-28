@@ -92,3 +92,14 @@
 		border-top-width:36px;
 	}
 }
+
+@mixin float_columns() {
+	float:left;
+	width:48%;
+	margin-right:2%;
+
+	&:nth-of-type(even) {
+		margin-right: 0;
+		margin-left: 2%;
+	}
+}
