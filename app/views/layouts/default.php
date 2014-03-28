@@ -12,7 +12,7 @@
     <title>theAlScott.co.uk</title>
 
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Press+Start+2P' rel='stylesheet' type='text/css'>
-    <link href='/css/styles.css' rel='stylesheet' />
+    <link href='/css/sassquatch.css' rel='stylesheet' />
 
     <script>
     // To prevent nasty popin, we add a loading class immediately.

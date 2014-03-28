@@ -1,13 +1,10 @@
-@mixin work_page_base() {
+#work_page {
 	section {
 		margin-bottom:0;
 	}
 
 	.project_link {
-		
 		margin-bottom:1.6rem;
-		
-
 		a {
 			@extend .button;
 			height:6em;
@@ -24,7 +21,7 @@
 			bottom:1em;
 			left:1em;
 		}
-		
+
 		&#nivea_link a {
 			@include project_link($nivea_blue, $nivea_pink, $nivea_dark_blue, white);
 		}
@@ -40,6 +37,49 @@
 
 		&#smirnoff_link a {
 			@include project_link($smirnoff_silver, $smirnoff_red, $smirnoff_dark_silver, $charcoal);
+		}
+
+		@include breakpoint($tablet) {
+			float:left;
+			width:48%;
+			margin-right:2%;
+
+			&:nth-child(even) {
+				margin-right: 0;
+				margin-left: 2%;
+			}
+		}
+
+		@include breakpoint($narrow) {
+			width:100%;
+			margin-right:0;
+
+			&:nth-child(even) {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+
+		@include breakpoint($wide) {
+			width:48%;
+			margin-right:2%;
+
+			&:nth-child(even) {
+				margin-right: 0;
+				margin-left: 2%;
+			}
+		}
+	}
+
+	#project_list {
+		@include breakpoint($tablet) {
+			@include clearfix;
+		}
+	}	
+
+	.contact_me_wrapper {
+		@include breakpoint($narrow) {
+			clear:left;
 		}
 	}
 }

@@ -1,4 +1,5 @@
-@mixin home_page_base() {
+#about_page {
+
 	#about_me {
 		h2 {
 			@extend %red_chunky_heading;

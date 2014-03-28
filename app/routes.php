@@ -14,8 +14,9 @@
 
 Route::controller('work', 'WorkController');
 
-Route::controller('home', 'HomeController');
-Route::controller('/', 'HomeController');
+Route::controller('about', 'AboutController');
+
+Route::controller('/', 'WorkController');
 
 
 

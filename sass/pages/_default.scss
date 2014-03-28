@@ -1,0 +1,201 @@
+html {
+	@include box-sizing(border-box); 
+	overflow-x: hidden;
+	background:black;
+	min-height: 100%;
+
+	&.loading {
+		@include single-transition(background, 1s);
+
+		.wrapper {
+			@include translateX(4000px);
+		}
+
+		.cloud {
+			@include translateX(-2000px);
+		}
+
+		&:after {
+			content:"LOADING";
+			position:absolute;
+			@include font-size(25);
+			font-family: 'Press Start 2P', cursive;
+			top:calc(50% - 0.5em);
+			width:100%;
+			text-align: center;
+			color:$yellow;
+		}
+	}
+
+	&.loaded {
+		@include single-transition(background, 1s);
+		background:$light_blue;
+	}
+}
+
+body {
+	margin:0;
+}
+
+footer {
+	@include box-sizing(border-box);
+	@include box-shadow(
+		0 -5px 0 $green,
+		0 -10px 0 $med_green,
+		0 -15px 0 $bright_green
+	);
+	position:fixed;
+	bottom:0;
+	padding:0 0.5em;
+	width:100%;
+	background:$dark_brown;
+	border-top:10px $brown solid;
+	color:white;
+
+	.copyright {
+		float:right;
+		line-height: 1.1em;
+	}
+}
+
+.video_wrapper, figure {
+	video, img {
+		@include box-sizing(border-box);
+		@include chunk(5, $charcoal);
+		border:3px solid $charcoal;
+		margin-bottom:1em;
+		width:100%;
+		height:auto;
+
+		@include breakpoint($narrow) {
+			margin-bottom:2em;
+		}
+	}
+}
+
+.wrapper {
+	@include clearfix;
+	@include single-transition(all, 1s);
+	@include box-sizing(border-box);	
+	min-width:320px;
+	max-width:90%;
+	margin:0 auto 3rem;
+	position:relative;
+	padding:0.5rem;
+
+	@include breakpoint($wide) {
+		max-width:1200px;
+	}
+}
+
+#logo {
+	$imageWidth: 60px;
+	$imageHeight: 96px;
+
+	$modifier: 1.5;
+
+	$displayWidth: $imageWidth/$modifier;
+	$displayHeight: $imageHeight/$modifier;
+	
+	background: url("../images/avatar.png") left center no-repeat;
+	background-size: $displayWidth $displayHeight;
+
+	min-width: $displayWidth;
+	min-height: $displayHeight;
+
+	padding-left:$displayWidth + 16px;
+	line-height:$displayHeight;
+
+	margin-bottom:1rem;
+
+	a {
+		@include chunk(10, $blue);
+	}
+
+	@include breakpoint($tablet) {
+		$imageWidth: 60px;
+		$imageHeight: 96px;
+
+		$modifier: 1;
+
+		$displayWidth: $imageWidth/$modifier;
+		$displayHeight: $imageHeight/$modifier;
+
+		@include font-size(20);
+		
+		background-size: $displayWidth $displayHeight;
+
+		min-width: $displayWidth;
+		min-height: $displayHeight;
+
+		padding-left:$displayWidth + 16px;
+		line-height:$displayHeight;
+	}
+}
+
+.cloud {
+	display:none;
+
+	@include breakpoint($tablet) {
+		@include single-transition(transform, 2s);
+		position:fixed;
+		display: block;
+
+		div {
+			position:absolute;
+			background:rgba(255,255,255,0.5);
+		}
+	}
+}
+
+#intro {
+	@include single-transition(all, 0.3s);
+	@include speech_bubble;
+	margin:0 6px 2em 34px;
+	max-width:600px;
+	display:inline-block;
+
+	@include breakpoint($tablet) {
+		margin-left:50px;
+	}
+}
+
+#intro_addendum {
+	@extend #intro;
+	@include speech_bubble_addendum;
+	display:block;
+	
+}
+
+section {
+	@include box-sizing(border-box);
+	margin-bottom: 2em;
+	width:100%;
+
+	@include breakpoint($narrow) {
+		float:left;
+		width:48%;
+		margin-right:2%;
+
+		&:nth-child(even) {
+			margin-right: 0;
+			margin-left: 2%;
+		}
+
+		&.double_column {
+			width:100%;
+			margin-left:0;
+			margin-right:0;
+		}
+	}
+}
+
+#contact_me {
+	h2 {
+		@extend %blue_chunky_heading;
+	}
+
+	.button {
+		@extend %large_button;
+	}
+}

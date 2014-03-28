@@ -1,83 +1,81 @@
-@mixin buttons() {
+button,
+.button {
+	$chunk_depth:5;
 
-	button,
-	.button {
-		$chunk_depth:5;
+	@include single-transition(all, 0.3s);
+	@include chunk($chunk_depth, $charcoal);
 
-		@include single-transition(all, 0.3s);
-		@include chunk($chunk_depth, $charcoal);
+	display:inline-block;
+	outline: none;
+	position:relative;
+	-webkit-appearance: none;
+	border:3px $charcoal solid;
+	background:$med_blue;
+	cursor:pointer;
+	padding:2px 24px 2px 4px;
+	margin-bottom:1em;
 
-		display:inline-block;
-		outline: none;
-		position:relative;
-		-webkit-appearance: none;
-		border:3px $charcoal solid;
-		background:$med_blue;
-		cursor:pointer;
-		padding:2px 24px 2px 4px;
-		margin-bottom:1em;
+	top:0;
+	left:0;
 
-		&:hover,
-		&:focus {
-			background:$blue;			
-		}
-
-		&:active {
-			
-			top:#{$chunk_depth}px;
-			left:#{$chunk_depth}px;
-			@include box-shadow(none);
-		}
-
-		&:after {
-			content:">";
-			position:absolute;
-			bottom:calc(50% - 0.75em);
-			right:5px;
-		}
+	&:hover,
+	&:focus {
+		background:$blue;			
 	}
 
+	&:active {
+		
+		top:#{$chunk_depth}px;
+		left:#{$chunk_depth}px;
+		@include box-shadow(none);
+	}
 
+	&:after {
+		content:">";
+		position:absolute;
+		bottom:calc(50% - 0.75em);
+		right:5px;
+	}
+}
 
-    %large_button {
-    	@extend .button;
-    	@include font-size(14);
+%large_button {
+	@extend .button;
+	@include font-size(14);
 
-    	min-width:280px;
-    	padding:5px 10px;
-    }
+	min-width:280px;
+	padding:5px 10px;
+}
 
-    %red_button {
-    	@extend .button;
-    	background:$med_red;
+%red_button {
+	@extend .button;
+	background:$med_red;
 
-    	&:hover,
-		&:focus {
-			background:$red;			
-		}
-    }
+	&:hover,
+	&:focus {
+		background:$red;			
+	}
+}
 
-    %yellow_button {
-    	@extend .button;
-    	background:$med_yellow;
+%yellow_button {
+	@extend .button;
+	background:$med_yellow;
 
-    	&:hover,
-		&:focus {
-			background:$yellow;			
-		}
-    }  
+	&:hover,
+	&:focus {
+		background:$yellow;			
+	}
+}  
 
-    .back_button {
-		@extend %yellow_button;
+.back_button {
+	@extend %yellow_button;
 
-		padding-left:24px;
-		padding-right:4px;
+	padding-left:24px;
+	padding-right:4px;
 
-		&:after {
-			content:"<";
-			position:absolute;
-			bottom:calc(50% - 0.75em);
-			left:5px;
-		}
-	}  
+	&:after {
+		content:"<";
+		position:absolute;
+		bottom:calc(50% - 0.75em);
+		left:5px;
+	}
 }

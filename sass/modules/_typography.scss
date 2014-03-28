@@ -1,120 +1,117 @@
-@mixin typography() {
-
-	html {
-		font-size:90%;
-		font-family: 'Ubuntu Mono', sans-serif;
-		color:$charcoal;
-		* {
-			line-height: 1.4em;
-		}
+html {
+	font-size:90%;
+	font-family: 'Ubuntu Mono', sans-serif;
+	color:$charcoal;
+	* {
+		line-height: 1.4em;
 	}
+}
 
-	h1 {
-		@include font-size(16);
-		font-family: 'Press Start 2P', cursive;
-		margin-bottom: 1em;
+h1 {
+	@include font-size(16);
+	font-family: 'Press Start 2P', cursive;
+	margin-bottom: 1em;
+}
+
+h2 {
+	@include font-size(12);
+	font-family: 'Press Start 2P', cursive;
+	margin-bottom: 1em;
+}
+
+h3 {
+	@include font-size(10);
+	font-family: 'Press Start 2P', cursive;
+	margin-bottom: 1em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+p {
+	@include font-size(12);
+	margin-bottom: 1em;
+}
+
+a {
+	@include single-transition(all, 0.3s);
+
+	color:$charcoal;
+	background:$med_blue;
+	text-decoration: none;
+
+	padding:0.2em 0.1em;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background:$blue;
 	}
+}
 
-	h2 {
-		@include font-size(12);
-		font-family: 'Press Start 2P', cursive;
-		margin-bottom: 1em;
+ul {
+	@include box-sizing(border-box);
+	@include chunk(5, $med_grey);
+	max-width: 306px;
+	background:white;
+
+	// border:3px $charcoal solid;
+	margin-bottom: 2rem;
+	li {
+		list-style:square;
+		margin-left: 1.4em;
 	}
+}
 
-	h3 {
-		@include font-size(10);
-		font-family: 'Press Start 2P', cursive;
-		margin-bottom: 1em;
+button, .button {
+	font-family: 'Press Start 2P', cursive;
+}
+
+.copyright_symbol {
+	font-size:1.5em;
+	line-height: 1.1em;
+}
+
+%base_chunk {
+	@include single-transition(background, 0.3s);
+	padding:4px 8px;
+	text-align: center;
+}
+
+%red_chunky_heading {
+	@extend %base_chunk;
+	@include chunk(5, $red);
+	background:$med_red;
+
+	&:hover,
+	&:focus {
+		background:$red;
 	}
+}
 
-	strong {
-		font-weight: bold;
+%blue_chunky_heading {
+	@extend %base_chunk;
+	@include chunk(5, $blue);
+	background:$med_blue;
+
+	&:hover,
+	&:focus {
+		background:$blue;
 	}
+}
 
-	em {
-		font-style: italic;
+%yellow_chunky_heading {
+	@extend %base_chunk;
+	@include chunk(5, $yellow);
+	background:$med_yellow;
+
+	&:hover,
+	&:focus {
+		background:$yellow;
 	}
-
-	p {
-		@include font-size(12);
-		margin-bottom: 1em;
-	}
-
-	a {
-		@include single-transition(all, 0.3s);
-
-		color:$charcoal;
-		background:$med_blue;
-		text-decoration: none;
-
-		padding:0.2em 0.1em;
-
-		&:hover,
-		&:focus,
-		&:active {
-			background:$blue;
-		}
-	}
-
-	ul {
-		@include box-sizing(border-box);
-		@include chunk(5, $med_grey);
-		max-width: 306px;
-		background:white;
-
-		// border:3px $charcoal solid;
-		margin-bottom: 2rem;
-		li {
-			list-style:square;
-			margin-left: 1.4em;
-		}
-	}
-
-	button, .button {
-		font-family: 'Press Start 2P', cursive;
-	}
-
-	.copyright_symbol {
-		font-size:1.5em;
-		line-height: 1.1em;
-	}
-
-	%base_chunk {
-		@include single-transition(background, 0.3s);
-		padding:4px 8px;
-		text-align: center;
-	}
-
-    %red_chunky_heading {
-    	@extend %base_chunk;
-    	@include chunk(5, $red);
-    	background:$med_red;
-
-    	&:hover,
-    	&:focus {
-    		background:$red;
-    	}
-    }
-
-    %blue_chunky_heading {
-    	@extend %base_chunk;
-    	@include chunk(5, $blue);
-    	background:$med_blue;
-
-    	&:hover,
-    	&:focus {
-    		background:$blue;
-    	}
-    }
-
-    %yellow_chunky_heading {
-    	@extend %base_chunk;
-    	@include chunk(5, $yellow);
-    	background:$med_yellow;
-
-    	&:hover,
-    	&:focus {
-    		background:$yellow;
-    	}
-    }
 }
