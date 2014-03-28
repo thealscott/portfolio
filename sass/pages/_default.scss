@@ -1,7 +1,7 @@
 html {
 	@include box-sizing(border-box); 
 	overflow-x: hidden;
-	background:black;
+	background:$light_blue;
 	min-height: 100%;
 
 	&.loading {
@@ -24,6 +24,7 @@ html {
 			width:100%;
 			text-align: center;
 			color:$yellow;
+			@include text-stroke(black, 5);
 		}
 	}
 

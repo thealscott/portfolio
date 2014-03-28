@@ -24,24 +24,32 @@
     </div>
     
     <figure>
-        <img src="/images/work/tropicana-1.jpg" />
+        <a href="/images/work/tropicana-1.jpg" target="_blank">
+            <img src="/images/work/tropicana-1.jpg" />
+        </a>
     </figure>
 </section>
 
 <section class="double_column">
     <figure>
-        <img src="/images/work/tropicana-2.jpg" />
+        <a href="/images/work/tropicana-2.jpg" target="_blank">
+            <img src="/images/work/tropicana-2.jpg" />
+        </a>
     </figure>
 </section>
 
 <section>
     <figure>
-        <img src="/images/work/tropicana-4.jpg" />
+        <a href="/images/work/tropicana-4.jpg" target="_blank">
+            <img src="/images/work/tropicana-4.jpg" />
+        </a>
     </figure>
 </section>
 
 <section>
     <figure>
-        <img src="/images/work/tropicana-3.jpg" />
+        <a href="/images/work/tropicana-3.jpg" target="_blank">
+            <img src="/images/work/tropicana-3.jpg" />
+        </a>
     </figure>
 </section>

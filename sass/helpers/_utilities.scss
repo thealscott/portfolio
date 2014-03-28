@@ -39,6 +39,23 @@
 	}
 }
 
+@mixin text-stroke($color, $weight) {
+	$list:();
+	@for $i from 1 through $weight {
+		$list: append($list, -#{$i}px -#{$i}px 0px $color, $separator:comma);
+		$list: append($list, #{$i}px -#{$i}px 0px $color, $separator:comma);
+		$list: append($list, -#{$i}px #{$i}px 0px $color, $separator:comma);
+		$list: append($list, #{$i}px #{$i}px 0px $color, $separator:comma);
+
+		$list: append($list, #{$i}px 0 0px $color, $separator:comma);
+		$list: append($list, -#{$i}px 0 0px $color, $separator:comma);
+
+		$list: append($list, 0 #{$i}px 0px $color, $separator:comma);
+		$list: append($list, 0 -#{$i}px 0px $color, $separator:comma);
+	}
+	@include text-shadow($list);
+}
+
 @mixin speech_bubble() {
 	@include box-sizing(border-box);
 	@include chunk(5, $charcoal);

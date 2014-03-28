@@ -31,18 +31,24 @@
     </div>
     
     <figure>
-        <img src="/images/work/smirnoff_nep-2.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        <a href="/images/work/smirnoff_nep-2.jpg" target="_blank">
+            <img src="/images/work/smirnoff_nep-2.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        </a>
     </figure>
     
 </section>
 
 <section>
     <figure>
-        <img src="/images/work/smirnoff_nep-1.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        <a href="/images/work/smirnoff_nep-1.jpg" target="_blank">
+            <img src="/images/work/smirnoff_nep-1.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        </a>
     </figure>
     
     
     <figure>
-        <img src="/images/work/smirnoff_nep-3.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        <a href="/images/work/smirnoff_nep-3.jpg" target="_blank">
+            <img src="/images/work/smirnoff_nep-3.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        </a>
     </figure>
 </section>

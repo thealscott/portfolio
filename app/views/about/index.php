@@ -16,12 +16,9 @@
 			<a href="/work" id="work_link" class="button" title="Judge my life's efforts">See my work!</a>
 		</div>
 
-
 		<figure>
 			<img src="/images/bio_unpixelated.jpg" title="A lovely picture of me taken in a delightfully gentrified pub in South London. What a handsome devil, eh?" />
 		</figure>
-
-
 		
 	</div>
 

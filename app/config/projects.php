@@ -6,8 +6,8 @@ return array(
 		'disney',
 		'smirnoff',
 		'nivea',
-		'jack_daniels',
-		'fire_eater',
-		'agency_republic'
+		// 'jack_daniels',
+		// 'fire_eater',
+		// 'agency_republic'
 	)
 );

@@ -17,12 +17,6 @@
         </a>
     </div>
     
-<!--    <div class="button_wrapper">
-        <a href="/" target="_blank" class="button">
-            Check it out
-        </a>
-    </div>-->
-    
     <div class="video_wrapper">
         <video controls preload="auto">
            <source src="/videos/gift_wrap_walkthrough.mp4" type="video/mp4" />
@@ -31,18 +25,24 @@
     </div>
     
     <figure>
-        <img src="/images/work/nivea_wrapped_in_friendship-2.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        <a href="/images/work/nivea_wrapped_in_friendship-2.jpg" target="_blank">
+            <img src="/images/work/nivea_wrapped_in_friendship-2.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        </a>
     </figure>
     
 </section>
 
 <section>
     <figure>
-        <img src="/images/work/nivea_wrapped_in_friendship-5.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        <a href="/images/work/nivea_wrapped_in_friendship-5.jpg" target="_blank">
+            <img src="/images/work/nivea_wrapped_in_friendship-5.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        </a>
     </figure>
     
     
     <figure>
-        <img src="/images/work/nivea_wrapped_in_friendship-7.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        <a href="/images/work/nivea_wrapped_in_friendship-7.jpg" target="_blank">
+            <img src="/images/work/nivea_wrapped_in_friendship-7.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        </a>
     </figure>
 </section>
