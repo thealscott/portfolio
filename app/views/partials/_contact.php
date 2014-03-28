@@ -4,7 +4,7 @@
 	</h2>
 
 	<p>
-		If you are looking to communicate/interact with me (or just stalk me a bit), one of the below options is probably the best way to do it.
+		If you are looking to communicate/interact with me (or just stalk me a bit), one of the below options is probably the best way to&nbsp;do&nbsp;it.
 	</p>
 
 	<div class="buttons">
@@ -13,7 +13,7 @@
 		</div>
 
 		<div>
-			<a href="uk.linkedin.com/pub/al-scott/53/17/681/" class="button" target="_blank" title="Stalk me on LinkedIn">LinkedIn</a>
+			<a href="http://uk.linkedin.com/pub/al-scott/53/17/681/" class="button" target="_blank" title="Stalk me on LinkedIn">LinkedIn</a>
 		</div>
 
 		<div>

@@ -1,7 +1,8 @@
 @media only screen and (min-width: 1280px) {
   /* line 4, ../../sass/modules/_buttons.scss */
   button,
-  .button {
+  .button,
+  .back_button {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -17,23 +18,57 @@
     border: 3px #383838 solid;
     background: #92cbff;
     cursor: pointer;
-    padding: 2px 4px;
+    padding: 2px 24px 2px 4px;
     margin-bottom: 1em;
   }
   /* line 21, ../../sass/modules/_buttons.scss */
   button:hover, button:focus,
   .button:hover,
-  .button:focus {
+  .back_button:hover,
+  .button:focus,
+  .back_button:focus {
     background: #4e90cc;
   }
   /* line 25, ../../sass/modules/_buttons.scss */
   button:active,
-  .button:active {
+  .button:active,
+  .back_button:active {
     top: 5px;
     left: 5px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+  }
+  /* line 32, ../../sass/modules/_buttons.scss */
+  button:after,
+  .button:after,
+  .back_button:after {
+    content: ">";
+    position: absolute;
+    bottom: calc(50% - 0.75em);
+    right: 5px;
+  }
+
+  /* line 60, ../../sass/modules/_buttons.scss */
+  .back_button {
+    background: #fff28a;
+  }
+  /* line 65, ../../sass/modules/_buttons.scss */
+  .back_button:hover, .back_button:focus {
+    background: #ebd213;
+  }
+
+  /* line 70, ../../sass/modules/_buttons.scss */
+  .back_button {
+    padding-left: 24px;
+    padding-right: 4px;
+  }
+  /* line 76, ../../sass/modules/_buttons.scss */
+  .back_button:after {
+    content: "<";
+    position: absolute;
+    bottom: calc(50% - 0.75em);
+    left: 5px;
   }
 
   /* line 3, ../../sass/modules/_typography.scss */
@@ -124,7 +159,7 @@
   }
 
   /* line 73, ../../sass/modules/_typography.scss */
-  button, .button {
+  button, .button, .back_button {
     font-family: 'Press Start 2P', cursive;
   }
 
@@ -132,5 +167,27 @@
   .copyright_symbol {
     font-size: 1.5em;
     line-height: 1.1em;
+  }
+
+  /* line 2, ../../sass/pages/default/_1280.scss */
+  .wrapper {
+    max-width: 1200px;
+  }
+
+  /* line 3, ../../sass/pages/work/_1280.scss */
+  #work_page #project_list {
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 7, ../../sass/pages/work/_1280.scss */
+  #work_page .project_link {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+  }
+  /* line 12, ../../sass/pages/work/_1280.scss */
+  #work_page .project_link:nth-child(even) {
+    margin-right: 0;
+    margin-left: 2%;
   }
 }

@@ -1,3 +1,4 @@
+<script src="//vjs.zencdn.net/4.2/video.js"></script>
 <script type="text/javascript">
 // todo: clean this up and implement in a more robust way
 // This serves to set a minimum display time for the loading state.
@@ -6,14 +7,14 @@ var tooQuick = true;
 
 setTimeout(function(){
 	tooQuick = false;
-}, 1000);
+}, 500);
 
 window.onload = function(){
 	if (tooQuick) {
 		setTimeout(function(){
 			html.classList.remove('loading');
 			html.classList.add('loaded');
-		}, 1000);
+		}, 500);
 	}
 	else {
 		html.classList.remove('loading');

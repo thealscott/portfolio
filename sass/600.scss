@@ -7,5 +7,9 @@
        	#home_page {
 			@include home_page_600;
 		}
+
+		#work_page {
+			@include work_page_600;
+		}
    };
 }

@@ -20,4 +20,8 @@
 	#home_page {
 		@include home_page_base;
 	}
+
+	#work_page {
+		@include work_page_base;
+	}
 };

@@ -3,5 +3,13 @@
    
    @include construct() {
        @include default_page_960;
+
+       	#home_page {
+			@include home_page_960;
+		}
+
+		#work_page {
+			@include work_page_960;
+		}
    };
 }

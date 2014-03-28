@@ -12,6 +12,33 @@
 	margin-right:#{$depth}px;
 }
 
+@mixin project_link($primary, $secondary, $tertiary, $text) {
+	@include chunk(5, $secondary);
+
+	border-color:$secondary;
+	background:$primary;
+
+	h2, h3 {
+		color:$text;
+	}
+
+	&:hover,
+	&:focus {
+		background:$tertiary;
+	}
+
+	&:active {
+		@include box-shadow(none);
+	}
+
+	&:after {
+		@include font-size(16);
+		color:$text;
+		bottom:1rem;
+		right:0.5rem;
+	}
+}
+
 @mixin speech_bubble() {
 	@include box-sizing(border-box);
 	@include chunk(5, $charcoal);
@@ -44,5 +71,24 @@
 		border:7px white solid;
 		border-top-color:transparent;
 		border-right-color:transparent;
+	}
+}
+
+@mixin speech_bubble_addendum() {
+	@include speech_bubble;
+
+	&:before {
+		top:-40px;
+		left:17px;
+		border:5px $charcoal solid;
+		border-right-width:15px;
+		border-top-width:35px;
+	}
+
+	&:after {
+		top:-41px;
+		left:20px;
+		border:5px white solid;
+		border-top-width:36px;
 	}
 }
