@@ -14,6 +14,8 @@
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Press+Start+2P' rel='stylesheet' type='text/css'>
     <link href='/css/sassquatch.css' rel='stylesheet' />
 
+    <link rel="icon" type="image/png" href="/favicon.png">
+
     <script>
     // To prevent nasty popin, we add a loading class immediately.
     // When everything is loaded, we remove for a nice transition.
