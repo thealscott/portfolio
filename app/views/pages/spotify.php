@@ -9,7 +9,7 @@
 	</h2>
 
 	<p>
-		For reasons unknown to mankind, HTTP links for Spotify <a href="http://open.spotify.com/user/alscott/playlist/4hFkuhNtPi07LgibIrXrg7" target="blank" title="HipHop-o-cratic Oath">(like this)</a> always try to open the web player, even if you have the native app. This bookmarklet lets you convert the HTTP url when the web player opens to a well form Spotify URI so you can copy pasta it without hassle.
+		For reasons unknown to mankind, HTTP links for Spotify <a href="http://open.spotify.com/user/alscott/playlist/4hFkuhNtPi07LgibIrXrg7" target="blank" title="HipHop-o-cratic Oath">(like this)</a> always try to open the web player, even if you have the native app. This bookmarklet lets you convert the HTTP url when the web player opens to a well formed Spotify URI so you can copy pasta it without&nbsp;hassle.
 	</p>
 
 	<h3>Drag this link to your bookmarks</h3>
