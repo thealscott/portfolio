@@ -16,6 +16,8 @@ Route::controller('work', 'WorkController');
 
 Route::controller('about', 'AboutController');
 
+Route::get('spotify', 'PagesController@getSpotifyURI');
+
 Route::controller('/', 'WorkController');
 
 

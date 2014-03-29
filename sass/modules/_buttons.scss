@@ -2,6 +2,7 @@ button,
 .button {
 	$chunk_depth:5;
 
+	@include box-sizing(border-box);
 	@include single-transition(all, 0.3s);
 	@include chunk($chunk_depth, $charcoal);
 
@@ -42,8 +43,8 @@ button,
 	@extend .button;
 	@include font-size(14);
 
-	min-width:280px;
-	padding:5px 10px;
+	min-width:300px;
+	padding:5px 30px 5px 10px;
 }
 
 %red_button {
@@ -64,6 +65,10 @@ button,
 	&:focus {
 		background:$yellow;			
 	}
+}
+
+.large_button {
+	@extend %large_button;
 }  
 
 .back_button {

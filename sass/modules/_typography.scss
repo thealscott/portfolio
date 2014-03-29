@@ -42,7 +42,7 @@ a {
 	@include single-transition(all, 0.3s);
 
 	color:$charcoal;
-	background:$med_blue;
+	background:$med_red;
 	text-decoration: none;
 
 	padding:0.2em 0.1em;
@@ -50,7 +50,16 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		background:$blue;
+		background:$red;
+	}
+
+	#logo & {
+		background:$med_blue;
+		&:hover,
+		&:focus,
+		&:active {
+			background:$blue;
+		}
 	}
 }
 

@@ -24,38 +24,38 @@ module.exports = function(grunt) {
     clean: {
       tests: ['tmp'],
     },
-    sassquatch: {
-      compass : true,
-      sass_path : 'sass',
-      extra_configs : [
-        'color_map'
-      ],
-      helpers : [
-        'polyfills',
-        'utilities'
-      ],
-      breakpoints : [
-        // base always exists
-        '600', 
-        '960',
-        '1280'
-      ],
-      pages : [
-        // default always exists
-        'home',
-        'project',
-        'contact'
-      ],
-      modules : [
-        'typography',
-        'buttons',
-        'modals',
-      ]
-    }
+    // sassquatch: {
+    //   compass : true,
+    //   sass_path : 'sass',
+    //   extra_configs : [
+    //     'color_map'
+    //   ],
+    //   helpers : [
+    //     'polyfills',
+    //     'utilities'
+    //   ],
+    //   breakpoints : [
+    //     // base always exists
+    //     '600', 
+    //     '960',
+    //     '1280'
+    //   ],
+    //   pages : [
+    //     // default always exists
+    //     'home',
+    //     'project',
+    //     'contact'
+    //   ],
+    //   modules : [
+    //     'typography',
+    //     'buttons',
+    //     'modals',
+    //   ]
+    // }
   });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-sassquatch');
+  // grunt.loadNpmTasks('grunt-sassquatch');
 
 };
