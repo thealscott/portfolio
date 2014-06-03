@@ -6,10 +6,10 @@
 <head>
 	
 	<meta charset="UTF-8">
-    <meta name="description" content="The portfolio and personal playground of Al Scott, Esq.">
+    <meta name="description" content="The portfolio and playground of Al Scott, Esq.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>theAlScott.co.uk</title>
+    <title>theAlScott.co.uk - The Portfolio and Playground of Al Scott, Esq.</title>
 
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Press+Start+2P' rel='stylesheet' type='text/css'>
     <link href='/css/sassquatch.css' rel='stylesheet' />

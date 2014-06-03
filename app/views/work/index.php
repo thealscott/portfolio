@@ -12,8 +12,33 @@
         </a>
     </div>
     <?php endforeach; ?>
+
+    <div id="side_projects">
+	    <h2 title="Things wot I built out of boredom or annoyance, mostly.">
+			Experiments and Side Projects
+		</h2>
+
+		<p>
+			From time to time I find the time to fiddle about and make something useful or interesting. These are some of those&nbsp;things.
+		</p>
+
+		<div class="buttons">
+			<div>
+				<a href="/spotify" id="spotify_button" class="button" title="Get right with Spotify URIs">Spotify URI Converter</a>
+			</div>
+
+			<div>
+				<a href="/spotify" id="spotify_button" class="button" title="Get right with Spotify URIs">Republic FM</a>
+			</div>
+
+			<div>
+				<a href="/spotify" id="spotify_button" class="button" title="Get right with Spotify URIs">Fire drop animation</a>
+			</div>
+		</div>
+	</div>
     
 </section>
 
 <?php echo View::make('partials._about_link'); ?>
+<?php //echo View::make('partials._side_projects'); ?>
 <?php echo View::make('partials._contact'); ?>

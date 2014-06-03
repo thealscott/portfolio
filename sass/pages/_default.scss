@@ -217,6 +217,17 @@ section {
 	}
 }
 
+#side_projects {
+	h2 {
+		@extend %yellow_chunky_heading;
+		clear:both;
+	}	
+
+	.button {
+		@extend %yellow_button;
+	}
+}
+
 #contact_me {
 	margin-bottom:2em;
 
@@ -228,7 +239,6 @@ section {
 		@extend %large_button;
 	}
 }
-
 
 #about_me_link {
 	margin-bottom:2em;

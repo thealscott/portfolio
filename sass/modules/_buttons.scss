@@ -16,6 +16,8 @@ button,
 	padding:2px 24px 2px 4px;
 	margin-bottom:1em;
 
+	width:300px;
+
 	top:0;
 	left:0;
 
@@ -43,7 +45,7 @@ button,
 	@extend .button;
 	@include font-size(14);
 
-	min-width:300px;
+	// min-width:300px;
 	padding:5px 30px 5px 10px;
 }
 

@@ -159,7 +159,7 @@ ul li {
 }
 
 /* line 80, ../../sass/modules/_typography.scss */
-button, .button, .large_button, #contact_me .button, #about_me_link .button, #about_page #about_me #work_link, .back_button, #work_page .project_link a {
+button, .button, .large_button, #contact_me .button, #about_me_link .button, #about_page #about_me #work_link, .back_button, #side_projects .button, #work_page .project_link a {
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -170,7 +170,7 @@ button, .button, .large_button, #contact_me .button, #about_me_link .button, #ab
 }
 
 /* line 89, ../../sass/modules/_typography.scss */
-#about_me_link h2, #about_page #about_me h2, #spotify_page section h2, #contact_me h2 {
+#about_me_link h2, #about_page #about_me h2, #spotify_page section h2, #contact_me h2, #side_projects h2 {
   -moz-transition: background 0.3s;
   -o-transition: background 0.3s;
   -webkit-transition: background 0.3s;
@@ -205,6 +205,19 @@ button, .button, .large_button, #contact_me .button, #about_me_link .button, #ab
   background: #4e90cc;
 }
 
+/* line 117, ../../sass/modules/_typography.scss */
+#side_projects h2 {
+  -moz-box-shadow: 1px 1px 0px #ebd213, 2px 2px 0px #ebd213, 3px 3px 0px #ebd213, 4px 4px 0px #ebd213, 5px 5px 0px #ebd213;
+  -webkit-box-shadow: 1px 1px 0px #ebd213, 2px 2px 0px #ebd213, 3px 3px 0px #ebd213, 4px 4px 0px #ebd213, 5px 5px 0px #ebd213;
+  box-shadow: 1px 1px 0px #ebd213, 2px 2px 0px #ebd213, 3px 3px 0px #ebd213, 4px 4px 0px #ebd213, 5px 5px 0px #ebd213;
+  margin-right: 5px;
+  background: #fff28a;
+}
+/* line 122, ../../sass/modules/_typography.scss */
+#side_projects h2:hover, #side_projects h2:focus {
+  background: #ebd213;
+}
+
 /* line 1, ../../sass/modules/_buttons.scss */
 button,
 .button,
@@ -213,6 +226,7 @@ button,
 #about_me_link .button,
 #about_page #about_me #work_link,
 .back_button,
+#side_projects .button,
 #work_page .project_link a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -234,10 +248,11 @@ button,
   cursor: pointer;
   padding: 2px 24px 2px 4px;
   margin-bottom: 1em;
+  width: 300px;
   top: 0;
   left: 0;
 }
-/* line 22, ../../sass/modules/_buttons.scss */
+/* line 24, ../../sass/modules/_buttons.scss */
 button:hover, button:focus,
 .button:hover,
 .large_button:hover,
@@ -245,6 +260,7 @@ button:hover, button:focus,
 #about_me_link .button:hover,
 #about_page #about_me #work_link:hover,
 .back_button:hover,
+#side_projects .button:hover,
 #work_page .project_link a:hover,
 .button:focus,
 .large_button:focus,
@@ -252,10 +268,11 @@ button:hover, button:focus,
 #about_me_link .button:focus,
 #about_page #about_me #work_link:focus,
 .back_button:focus,
+#side_projects .button:focus,
 #work_page .project_link a:focus {
   background: #4e90cc;
 }
-/* line 27, ../../sass/modules/_buttons.scss */
+/* line 29, ../../sass/modules/_buttons.scss */
 button:active,
 .button:active,
 .large_button:active,
@@ -263,6 +280,7 @@ button:active,
 #about_me_link .button:active,
 #about_page #about_me #work_link:active,
 .back_button:active,
+#side_projects .button:active,
 #work_page .project_link a:active {
   top: 5px;
   left: 5px;
@@ -270,7 +288,7 @@ button:active,
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 34, ../../sass/modules/_buttons.scss */
+/* line 36, ../../sass/modules/_buttons.scss */
 button:after,
 .button:after,
 .large_button:after,
@@ -278,6 +296,7 @@ button:after,
 #about_me_link .button:after,
 #about_page #about_me #work_link:after,
 .back_button:after,
+#side_projects .button:after,
 #work_page .project_link a:after {
   content: ">";
   position: absolute;
@@ -285,38 +304,37 @@ button:after,
   right: 5px;
 }
 
-/* line 42, ../../sass/modules/_buttons.scss */
+/* line 44, ../../sass/modules/_buttons.scss */
 .large_button, #contact_me .button, #contact_me .back_button, #contact_me #work_page .project_link a, #work_page .project_link #contact_me a, #about_me_link .button, #about_me_link .back_button, #about_me_link #work_page .project_link a, #work_page .project_link #about_me_link a, #about_page #about_me #work_link {
   font-size: 12.6px;
   font-size: 1.4rem;
-  min-width: 300px;
   padding: 5px 30px 5px 10px;
 }
 
-/* line 50, ../../sass/modules/_buttons.scss */
+/* line 52, ../../sass/modules/_buttons.scss */
 #about_me_link .large_button, #about_me_link .button, #about_me_link .back_button, #about_me_link #work_page .project_link a, #work_page .project_link #about_me_link a, #about_page #about_me #work_link {
   background: #ff7388;
 }
-/* line 54, ../../sass/modules/_buttons.scss */
+/* line 56, ../../sass/modules/_buttons.scss */
 #about_me_link .large_button:hover, #about_me_link .button:hover, #about_me_link .back_button:hover, #about_me_link #work_page .project_link a:hover, #work_page .project_link #about_me_link a:hover, #about_page #about_me #work_link:hover, #about_me_link .large_button:focus, #about_me_link .button:focus, #about_me_link .back_button:focus, #about_me_link #work_page .project_link a:focus, #work_page .project_link #about_me_link a:focus, #about_page #about_me #work_link:focus {
   background: #e33d2b;
 }
 
-/* line 60, ../../sass/modules/_buttons.scss */
-.back_button {
+/* line 62, ../../sass/modules/_buttons.scss */
+.back_button, #side_projects .button, #side_projects .large_button, #side_projects #about_page #about_me #work_link, #about_page #about_me #side_projects #work_link, #side_projects #work_page .project_link a, #work_page .project_link #side_projects a {
   background: #fff28a;
 }
-/* line 64, ../../sass/modules/_buttons.scss */
-.back_button:hover, .back_button:focus {
+/* line 66, ../../sass/modules/_buttons.scss */
+.back_button:hover, #side_projects .button:hover, #side_projects .large_button:hover, #side_projects #about_page #about_me #work_link:hover, #about_page #about_me #side_projects #work_link:hover, #side_projects #work_page .project_link a:hover, #work_page .project_link #side_projects a:hover, .back_button:focus, #side_projects .button:focus, #side_projects .large_button:focus, #side_projects #about_page #about_me #work_link:focus, #about_page #about_me #side_projects #work_link:focus, #side_projects #work_page .project_link a:focus, #work_page .project_link #side_projects a:focus {
   background: #ebd213;
 }
 
-/* line 74, ../../sass/modules/_buttons.scss */
+/* line 76, ../../sass/modules/_buttons.scss */
 .back_button {
   padding-left: 24px;
   padding-right: 4px;
 }
-/* line 80, ../../sass/modules/_buttons.scss */
+/* line 82, ../../sass/modules/_buttons.scss */
 .back_button:after {
   content: "<";
   position: absolute;
@@ -673,18 +691,23 @@ section {
   }
 }
 
-/* line 220, ../../sass/pages/_default.scss */
+/* line 221, ../../sass/pages/_default.scss */
+#side_projects h2 {
+  clear: both;
+}
+
+/* line 231, ../../sass/pages/_default.scss */
 #contact_me {
   margin-bottom: 2em;
 }
 
-/* line 233, ../../sass/pages/_default.scss */
+/* line 243, ../../sass/pages/_default.scss */
 #about_me_link {
   margin-bottom: 2em;
 }
 
 @media (min-width: 960px) {
-  /* line 246, ../../sass/pages/_default.scss */
+  /* line 256, ../../sass/pages/_default.scss */
   #about_me_link + #contact_me,
   #contact_me + #about_me_link {
     margin-left: 2%;
@@ -721,20 +744,21 @@ section {
 /* line 26, ../../sass/pages/work/_default.scss */
 #work_page .project_link a {
   height: 8em;
+  width: auto;
   position: relative;
   display: block;
   padding: 1em;
   background: white;
   margin-bottom: 0;
 }
-/* line 36, ../../sass/pages/work/_default.scss */
+/* line 37, ../../sass/pages/work/_default.scss */
 #work_page .project_link h3 {
   margin-bottom: 0;
   position: absolute;
   bottom: 1em;
   left: 1em;
 }
-/* line 43, ../../sass/pages/work/_default.scss */
+/* line 44, ../../sass/pages/work/_default.scss */
 #work_page .project_link#nivea_link a {
   -moz-box-shadow: 1px 1px 0px #733f87, 2px 2px 0px #733f87, 3px 3px 0px #733f87, 4px 4px 0px #733f87, 5px 5px 0px #733f87;
   -webkit-box-shadow: 1px 1px 0px #733f87, 2px 2px 0px #733f87, 3px 3px 0px #733f87, 4px 4px 0px #733f87, 5px 5px 0px #733f87;
@@ -765,7 +789,7 @@ section {
   bottom: 1rem;
   right: 0.5rem;
 }
-/* line 47, ../../sass/pages/work/_default.scss */
+/* line 48, ../../sass/pages/work/_default.scss */
 #work_page .project_link#tropicana_link a {
   -moz-box-shadow: 1px 1px 0px #017717, 2px 2px 0px #017717, 3px 3px 0px #017717, 4px 4px 0px #017717, 5px 5px 0px #017717;
   -webkit-box-shadow: 1px 1px 0px #017717, 2px 2px 0px #017717, 3px 3px 0px #017717, 4px 4px 0px #017717, 5px 5px 0px #017717;
@@ -796,7 +820,7 @@ section {
   bottom: 1rem;
   right: 0.5rem;
 }
-/* line 51, ../../sass/pages/work/_default.scss */
+/* line 52, ../../sass/pages/work/_default.scss */
 #work_page .project_link#disney_link a {
   -moz-box-shadow: 1px 1px 0px #ffc409, 2px 2px 0px #ffc409, 3px 3px 0px #ffc409, 4px 4px 0px #ffc409, 5px 5px 0px #ffc409;
   -webkit-box-shadow: 1px 1px 0px #ffc409, 2px 2px 0px #ffc409, 3px 3px 0px #ffc409, 4px 4px 0px #ffc409, 5px 5px 0px #ffc409;
@@ -827,7 +851,7 @@ section {
   bottom: 1rem;
   right: 0.5rem;
 }
-/* line 56, ../../sass/pages/work/_default.scss */
+/* line 57, ../../sass/pages/work/_default.scss */
 #work_page .project_link#smirnoff_link a {
   -moz-box-shadow: 1px 1px 0px #8e1025, 2px 2px 0px #8e1025, 3px 3px 0px #8e1025, 4px 4px 0px #8e1025, 5px 5px 0px #8e1025;
   -webkit-box-shadow: 1px 1px 0px #8e1025, 2px 2px 0px #8e1025, 3px 3px 0px #8e1025, 4px 4px 0px #8e1025, 5px 5px 0px #8e1025;
@@ -865,7 +889,7 @@ section {
     width: 48%;
     margin-right: 2%;
   }
-  /* line 65, ../../sass/pages/work/_default.scss */
+  /* line 66, ../../sass/pages/work/_default.scss */
   #work_page .project_link:nth-child(even) {
     margin-right: 0;
     margin-left: 2%;
@@ -877,7 +901,7 @@ section {
     width: 100%;
     margin-right: 0;
   }
-  /* line 75, ../../sass/pages/work/_default.scss */
+  /* line 76, ../../sass/pages/work/_default.scss */
   #work_page .project_link:nth-child(even) {
     margin-left: 0;
     margin-right: 0;
@@ -889,26 +913,27 @@ section {
     width: 48%;
     margin-right: 2%;
   }
-  /* line 85, ../../sass/pages/work/_default.scss */
+  /* line 86, ../../sass/pages/work/_default.scss */
   #work_page .project_link:nth-child(even) {
     margin-right: 0;
     margin-left: 2%;
   }
 }
 @media (min-width: 600px) {
-  /* line 92, ../../sass/pages/work/_default.scss */
+  /* line 93, ../../sass/pages/work/_default.scss */
   #work_page #project_list {
     overflow: hidden;
     *zoom: 1;
   }
 }
-/* line 98, ../../sass/pages/work/_default.scss */
+/* line 99, ../../sass/pages/work/_default.scss */
+#work_page #side_projects,
 #work_page #contact_me,
 #work_page #about_me_link {
   margin-bottom: 2em;
 }
 @media (min-width: 960px) {
-  /* line 103, ../../sass/pages/work/_default.scss */
+  /* line 105, ../../sass/pages/work/_default.scss */
   #work_page .contact_me_wrapper {
     clear: left;
   }

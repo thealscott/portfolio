@@ -12,4 +12,6 @@
 			<a href="/about" id="about_me_button" class="button" title="Learn the history of Al">About me</a>
 		</div>
 	</div>
+
+	
 </section>

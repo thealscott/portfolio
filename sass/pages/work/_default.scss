@@ -26,6 +26,7 @@
 		a {
 			@extend .button;
 			height:8em;
+			width:auto;
 			position:relative;
 			display: block;
 			padding:1em;
@@ -93,8 +94,9 @@
 		@include breakpoint($tablet) {
 			@include clearfix;
 		}
-	}	
+	}
 
+	#side_projects,
 	#contact_me,
 	#about_me_link {
 		margin-bottom:2em;
