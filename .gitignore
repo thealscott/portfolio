@@ -8,3 +8,5 @@ composer.lock
 nbproject/project.properties
 
 nbproject/project.xml
+node_modules
+/package.json
