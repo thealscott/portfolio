@@ -633,11 +633,11 @@ figure a:hover, figure a:active, figure a:focus {
 }
 /* line 97, ../../sass/helpers/_utilities.scss */
 #intro_addendum:before {
-  top: -40px;
+  top: -35px;
   left: 17px;
   border: 5px #383838 solid;
   border-right-width: 15px;
-  border-top-width: 35px;
+  border-top-width: 30px;
 }
 /* line 105, ../../sass/helpers/_utilities.scss */
 #intro_addendum:after {
@@ -741,7 +741,7 @@ section {
 #work_page .project_link {
   margin-bottom: 1.6rem;
 }
-/* line 26, ../../sass/pages/work/_default.scss */
+/* line 27, ../../sass/pages/work/_default.scss */
 #work_page .project_link a {
   height: 8em;
   width: auto;
@@ -750,15 +750,43 @@ section {
   padding: 1em;
   background: white;
   margin-bottom: 0;
+  -moz-box-shadow: 1px 1px 0px #383838, 2px 2px 0px #383838, 3px 3px 0px #383838, 4px 4px 0px #383838, 5px 5px 0px #383838;
+  -webkit-box-shadow: 1px 1px 0px #383838, 2px 2px 0px #383838, 3px 3px 0px #383838, 4px 4px 0px #383838, 5px 5px 0px #383838;
+  box-shadow: 1px 1px 0px #383838, 2px 2px 0px #383838, 3px 3px 0px #383838, 4px 4px 0px #383838, 5px 5px 0px #383838;
+  margin-right: 5px;
+  border-color: #383838;
+  background: white;
 }
-/* line 37, ../../sass/pages/work/_default.scss */
+/* line 21, ../../sass/helpers/_utilities.scss */
+#work_page .project_link a h2, #work_page .project_link a h3 {
+  color: #383838;
+}
+/* line 25, ../../sass/helpers/_utilities.scss */
+#work_page .project_link a:hover, #work_page .project_link a:focus {
+  background: #eff1f0;
+}
+/* line 30, ../../sass/helpers/_utilities.scss */
+#work_page .project_link a:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 34, ../../sass/helpers/_utilities.scss */
+#work_page .project_link a:after {
+  font-size: 14.4px;
+  font-size: 1.6rem;
+  color: #383838;
+  bottom: 1rem;
+  right: 0.5rem;
+}
+/* line 41, ../../sass/pages/work/_default.scss */
 #work_page .project_link h3 {
   margin-bottom: 0;
   position: absolute;
   bottom: 1em;
   left: 1em;
 }
-/* line 44, ../../sass/pages/work/_default.scss */
+/* line 48, ../../sass/pages/work/_default.scss */
 #work_page .project_link#nivea_link a {
   -moz-box-shadow: 1px 1px 0px #733f87, 2px 2px 0px #733f87, 3px 3px 0px #733f87, 4px 4px 0px #733f87, 5px 5px 0px #733f87;
   -webkit-box-shadow: 1px 1px 0px #733f87, 2px 2px 0px #733f87, 3px 3px 0px #733f87, 4px 4px 0px #733f87, 5px 5px 0px #733f87;
@@ -789,7 +817,7 @@ section {
   bottom: 1rem;
   right: 0.5rem;
 }
-/* line 48, ../../sass/pages/work/_default.scss */
+/* line 52, ../../sass/pages/work/_default.scss */
 #work_page .project_link#tropicana_link a {
   -moz-box-shadow: 1px 1px 0px #017717, 2px 2px 0px #017717, 3px 3px 0px #017717, 4px 4px 0px #017717, 5px 5px 0px #017717;
   -webkit-box-shadow: 1px 1px 0px #017717, 2px 2px 0px #017717, 3px 3px 0px #017717, 4px 4px 0px #017717, 5px 5px 0px #017717;
@@ -820,7 +848,7 @@ section {
   bottom: 1rem;
   right: 0.5rem;
 }
-/* line 52, ../../sass/pages/work/_default.scss */
+/* line 56, ../../sass/pages/work/_default.scss */
 #work_page .project_link#disney_link a {
   -moz-box-shadow: 1px 1px 0px #ffc409, 2px 2px 0px #ffc409, 3px 3px 0px #ffc409, 4px 4px 0px #ffc409, 5px 5px 0px #ffc409;
   -webkit-box-shadow: 1px 1px 0px #ffc409, 2px 2px 0px #ffc409, 3px 3px 0px #ffc409, 4px 4px 0px #ffc409, 5px 5px 0px #ffc409;
@@ -851,7 +879,7 @@ section {
   bottom: 1rem;
   right: 0.5rem;
 }
-/* line 56, ../../sass/pages/work/_default.scss */
+/* line 60, ../../sass/pages/work/_default.scss */
 #work_page .project_link#smirnoff_link a {
   -moz-box-shadow: 1px 1px 0px #8e1025, 2px 2px 0px #8e1025, 3px 3px 0px #8e1025, 4px 4px 0px #8e1025, 5px 5px 0px #8e1025;
   -webkit-box-shadow: 1px 1px 0px #8e1025, 2px 2px 0px #8e1025, 3px 3px 0px #8e1025, 4px 4px 0px #8e1025, 5px 5px 0px #8e1025;
@@ -889,7 +917,7 @@ section {
     width: 48%;
     margin-right: 2%;
   }
-  /* line 65, ../../sass/pages/work/_default.scss */
+  /* line 69, ../../sass/pages/work/_default.scss */
   #work_page .project_link:nth-child(even) {
     margin-right: 0;
     margin-left: 2%;
@@ -901,7 +929,7 @@ section {
     width: 100%;
     margin-right: 0;
   }
-  /* line 75, ../../sass/pages/work/_default.scss */
+  /* line 79, ../../sass/pages/work/_default.scss */
   #work_page .project_link:nth-child(even) {
     margin-left: 0;
     margin-right: 0;
@@ -913,27 +941,27 @@ section {
     width: 48%;
     margin-right: 2%;
   }
-  /* line 85, ../../sass/pages/work/_default.scss */
+  /* line 89, ../../sass/pages/work/_default.scss */
   #work_page .project_link:nth-child(even) {
     margin-right: 0;
     margin-left: 2%;
   }
 }
 @media (min-width: 600px) {
-  /* line 92, ../../sass/pages/work/_default.scss */
+  /* line 96, ../../sass/pages/work/_default.scss */
   #work_page #project_list {
     overflow: hidden;
     *zoom: 1;
   }
 }
-/* line 98, ../../sass/pages/work/_default.scss */
+/* line 102, ../../sass/pages/work/_default.scss */
 #work_page #side_projects,
 #work_page #contact_me,
 #work_page #about_me_link {
   margin-bottom: 2em;
 }
 @media (min-width: 960px) {
-  /* line 104, ../../sass/pages/work/_default.scss */
+  /* line 108, ../../sass/pages/work/_default.scss */
   #work_page .contact_me_wrapper {
     clear: left;
   }

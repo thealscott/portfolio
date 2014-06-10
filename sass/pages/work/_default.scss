@@ -22,9 +22,11 @@
 	}
 
 	.project_link {
+	
 		margin-bottom:1.6rem;
 		a {
 			@extend .button;
+
 			height:8em;
 			width:auto;
 			position:relative;
@@ -32,6 +34,8 @@
 			padding:1em;
 			background:white;
 			margin-bottom: 0;
+
+			@include project_link(white, $charcoal, $smirnoff_silver, $charcoal);
 		}
 
 		h3 {

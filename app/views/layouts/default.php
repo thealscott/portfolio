@@ -6,7 +6,7 @@
 <head>
 	
 	<meta charset="UTF-8">
-    <meta name="description" content="The portfolio and playground of Al Scott, Esq.">
+    <meta name="description" content="Hi there! Welcome to my portfolio. Below you can see a few examples of cool things I've worked on. You can also find out a little more about me or get in touch, if you fancy&nbsp;it.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>theAlScott.co.uk - The Portfolio and Playground of Al Scott, Esq.</title>
