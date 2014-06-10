@@ -14,7 +14,7 @@
 
 	<h3>Drag this link to your bookmarks</h3>
 
-	<a href="javascript:{var%20pathArray=window.location.pathname.split('/');var%20newPathname="spotify";for(i=1;i<pathArray.length;i++){newPathname+=":";newPathname+=pathArray[i];}window.location.replace(newPathname);};void(0);" 
+	<a href="javascript:{var%20pathArray=window.location.pathname.split('/');var%20newPathname='spotify';for(i=1;i<pathArray.length;i++){newPathname+=':';newPathname+=pathArray[i];}window.location.replace(newPathname);};void(0);" 
 		class="button large_button"
 		title="Spotify URI">
 		Spotify URI
