@@ -851,7 +851,7 @@ section {
   bottom: 1rem;
   right: 0.5rem;
 }
-/* line 57, ../../sass/pages/work/_default.scss */
+/* line 56, ../../sass/pages/work/_default.scss */
 #work_page .project_link#smirnoff_link a {
   -moz-box-shadow: 1px 1px 0px #8e1025, 2px 2px 0px #8e1025, 3px 3px 0px #8e1025, 4px 4px 0px #8e1025, 5px 5px 0px #8e1025;
   -webkit-box-shadow: 1px 1px 0px #8e1025, 2px 2px 0px #8e1025, 3px 3px 0px #8e1025, 4px 4px 0px #8e1025, 5px 5px 0px #8e1025;
@@ -889,7 +889,7 @@ section {
     width: 48%;
     margin-right: 2%;
   }
-  /* line 66, ../../sass/pages/work/_default.scss */
+  /* line 65, ../../sass/pages/work/_default.scss */
   #work_page .project_link:nth-child(even) {
     margin-right: 0;
     margin-left: 2%;
@@ -901,7 +901,7 @@ section {
     width: 100%;
     margin-right: 0;
   }
-  /* line 76, ../../sass/pages/work/_default.scss */
+  /* line 75, ../../sass/pages/work/_default.scss */
   #work_page .project_link:nth-child(even) {
     margin-left: 0;
     margin-right: 0;
@@ -913,27 +913,27 @@ section {
     width: 48%;
     margin-right: 2%;
   }
-  /* line 86, ../../sass/pages/work/_default.scss */
+  /* line 85, ../../sass/pages/work/_default.scss */
   #work_page .project_link:nth-child(even) {
     margin-right: 0;
     margin-left: 2%;
   }
 }
 @media (min-width: 600px) {
-  /* line 93, ../../sass/pages/work/_default.scss */
+  /* line 92, ../../sass/pages/work/_default.scss */
   #work_page #project_list {
     overflow: hidden;
     *zoom: 1;
   }
 }
-/* line 99, ../../sass/pages/work/_default.scss */
+/* line 98, ../../sass/pages/work/_default.scss */
 #work_page #side_projects,
 #work_page #contact_me,
 #work_page #about_me_link {
   margin-bottom: 2em;
 }
 @media (min-width: 960px) {
-  /* line 105, ../../sass/pages/work/_default.scss */
+  /* line 104, ../../sass/pages/work/_default.scss */
   #work_page .contact_me_wrapper {
     clear: left;
   }

@@ -50,7 +50,6 @@
 		}
 
 		&#disney_link a {
-			//@include project_link($disney_brown, $disney_dark_brown, black, $disney_yellow);
 			@include project_link(black, $disney_dark_yellow, $dark_charcoal, $disney_red);
 		}
 
