@@ -818,6 +818,37 @@ section {
   right: 0.5rem;
 }
 /* line 52, ../../sass/pages/work/_default.scss */
+#work_page .project_link#nivea_soft_link a {
+  -moz-box-shadow: 1px 1px 0px #0175b0, 2px 2px 0px #0175b0, 3px 3px 0px #0175b0, 4px 4px 0px #0175b0, 5px 5px 0px #0175b0;
+  -webkit-box-shadow: 1px 1px 0px #0175b0, 2px 2px 0px #0175b0, 3px 3px 0px #0175b0, 4px 4px 0px #0175b0, 5px 5px 0px #0175b0;
+  box-shadow: 1px 1px 0px #0175b0, 2px 2px 0px #0175b0, 3px 3px 0px #0175b0, 4px 4px 0px #0175b0, 5px 5px 0px #0175b0;
+  margin-right: 5px;
+  border-color: #0175b0;
+  background: white;
+}
+/* line 21, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#nivea_soft_link a h2, #work_page .project_link#nivea_soft_link a h3 {
+  color: #09508f;
+}
+/* line 25, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#nivea_soft_link a:hover, #work_page .project_link#nivea_soft_link a:focus {
+  background: #e1e1e1;
+}
+/* line 30, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#nivea_soft_link a:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 34, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#nivea_soft_link a:after {
+  font-size: 14.4px;
+  font-size: 1.6rem;
+  color: #09508f;
+  bottom: 1rem;
+  right: 0.5rem;
+}
+/* line 56, ../../sass/pages/work/_default.scss */
 #work_page .project_link#tropicana_link a {
   -moz-box-shadow: 1px 1px 0px #017717, 2px 2px 0px #017717, 3px 3px 0px #017717, 4px 4px 0px #017717, 5px 5px 0px #017717;
   -webkit-box-shadow: 1px 1px 0px #017717, 2px 2px 0px #017717, 3px 3px 0px #017717, 4px 4px 0px #017717, 5px 5px 0px #017717;
@@ -848,7 +879,7 @@ section {
   bottom: 1rem;
   right: 0.5rem;
 }
-/* line 56, ../../sass/pages/work/_default.scss */
+/* line 60, ../../sass/pages/work/_default.scss */
 #work_page .project_link#disney_link a {
   -moz-box-shadow: 1px 1px 0px #ffc409, 2px 2px 0px #ffc409, 3px 3px 0px #ffc409, 4px 4px 0px #ffc409, 5px 5px 0px #ffc409;
   -webkit-box-shadow: 1px 1px 0px #ffc409, 2px 2px 0px #ffc409, 3px 3px 0px #ffc409, 4px 4px 0px #ffc409, 5px 5px 0px #ffc409;
@@ -879,7 +910,7 @@ section {
   bottom: 1rem;
   right: 0.5rem;
 }
-/* line 60, ../../sass/pages/work/_default.scss */
+/* line 64, ../../sass/pages/work/_default.scss */
 #work_page .project_link#smirnoff_link a {
   -moz-box-shadow: 1px 1px 0px #8e1025, 2px 2px 0px #8e1025, 3px 3px 0px #8e1025, 4px 4px 0px #8e1025, 5px 5px 0px #8e1025;
   -webkit-box-shadow: 1px 1px 0px #8e1025, 2px 2px 0px #8e1025, 3px 3px 0px #8e1025, 4px 4px 0px #8e1025, 5px 5px 0px #8e1025;
@@ -910,6 +941,68 @@ section {
   bottom: 1rem;
   right: 0.5rem;
 }
+/* line 68, ../../sass/pages/work/_default.scss */
+#work_page .project_link#fire_eater_link a {
+  -moz-box-shadow: 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 5px 5px 0px black;
+  -webkit-box-shadow: 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 5px 5px 0px black;
+  box-shadow: 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 5px 5px 0px black;
+  margin-right: 5px;
+  border-color: black;
+  background: #dc041d;
+}
+/* line 21, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#fire_eater_link a h2, #work_page .project_link#fire_eater_link a h3 {
+  color: white;
+}
+/* line 25, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#fire_eater_link a:hover, #work_page .project_link#fire_eater_link a:focus {
+  background: #b70000;
+}
+/* line 30, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#fire_eater_link a:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 34, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#fire_eater_link a:after {
+  font-size: 14.4px;
+  font-size: 1.6rem;
+  color: white;
+  bottom: 1rem;
+  right: 0.5rem;
+}
+/* line 72, ../../sass/pages/work/_default.scss */
+#work_page .project_link#jack_daniels_link a {
+  -moz-box-shadow: 1px 1px 0px #c77d01, 2px 2px 0px #c77d01, 3px 3px 0px #c77d01, 4px 4px 0px #c77d01, 5px 5px 0px #c77d01;
+  -webkit-box-shadow: 1px 1px 0px #c77d01, 2px 2px 0px #c77d01, 3px 3px 0px #c77d01, 4px 4px 0px #c77d01, 5px 5px 0px #c77d01;
+  box-shadow: 1px 1px 0px #c77d01, 2px 2px 0px #c77d01, 3px 3px 0px #c77d01, 4px 4px 0px #c77d01, 5px 5px 0px #c77d01;
+  margin-right: 5px;
+  border-color: #c77d01;
+  background: #242426;
+}
+/* line 21, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#jack_daniels_link a h2, #work_page .project_link#jack_daniels_link a h3 {
+  color: white;
+}
+/* line 25, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#jack_daniels_link a:hover, #work_page .project_link#jack_daniels_link a:focus {
+  background: #070609;
+}
+/* line 30, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#jack_daniels_link a:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 34, ../../sass/helpers/_utilities.scss */
+#work_page .project_link#jack_daniels_link a:after {
+  font-size: 14.4px;
+  font-size: 1.6rem;
+  color: white;
+  bottom: 1rem;
+  right: 0.5rem;
+}
 @media (min-width: 600px) {
   /* line 24, ../../sass/pages/work/_default.scss */
   #work_page .project_link {
@@ -917,7 +1010,7 @@ section {
     width: 48%;
     margin-right: 2%;
   }
-  /* line 69, ../../sass/pages/work/_default.scss */
+  /* line 82, ../../sass/pages/work/_default.scss */
   #work_page .project_link:nth-child(even) {
     margin-right: 0;
     margin-left: 2%;
@@ -929,7 +1022,7 @@ section {
     width: 100%;
     margin-right: 0;
   }
-  /* line 79, ../../sass/pages/work/_default.scss */
+  /* line 92, ../../sass/pages/work/_default.scss */
   #work_page .project_link:nth-child(even) {
     margin-left: 0;
     margin-right: 0;
@@ -941,27 +1034,27 @@ section {
     width: 48%;
     margin-right: 2%;
   }
-  /* line 89, ../../sass/pages/work/_default.scss */
+  /* line 102, ../../sass/pages/work/_default.scss */
   #work_page .project_link:nth-child(even) {
     margin-right: 0;
     margin-left: 2%;
   }
 }
 @media (min-width: 600px) {
-  /* line 96, ../../sass/pages/work/_default.scss */
+  /* line 109, ../../sass/pages/work/_default.scss */
   #work_page #project_list {
     overflow: hidden;
     *zoom: 1;
   }
 }
-/* line 102, ../../sass/pages/work/_default.scss */
+/* line 115, ../../sass/pages/work/_default.scss */
 #work_page #side_projects,
 #work_page #contact_me,
 #work_page #about_me_link {
   margin-bottom: 2em;
 }
 @media (min-width: 960px) {
-  /* line 108, ../../sass/pages/work/_default.scss */
+  /* line 121, ../../sass/pages/work/_default.scss */
   #work_page .contact_me_wrapper {
     clear: left;
   }

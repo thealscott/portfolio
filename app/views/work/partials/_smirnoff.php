@@ -17,12 +17,6 @@
         </a>
     </div>
     
-<!--    <div class="button_wrapper">
-        <a href="/" target="_blank" class="button">
-            Check it out
-        </a>
-    </div>-->
-    
     <div class="video_wrapper">
         <video controls preload="auto">
            <source src="/videos/smirnoff_nep_walkthrough.mp4" type="video/mp4" />

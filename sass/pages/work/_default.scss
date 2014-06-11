@@ -49,6 +49,10 @@
 			@include project_link($nivea_blue, $nivea_pink, $nivea_dark_blue, white);
 		}
 
+		&#nivea_soft_link a {
+			@include project_link(white, $nivea_soft_blue, $smirnoff_dark_silver, $nivea_blue);
+		}
+
 		&#tropicana_link a {
 			@include project_link($trop_orange, $trop_green, $trop_dark_orange, white);
 		}
@@ -60,6 +64,15 @@
 		&#smirnoff_link a {
 			@include project_link($smirnoff_silver, $smirnoff_red, $smirnoff_dark_silver, $charcoal);
 		}
+
+		&#fire_eater_link a {
+			@include project_link($fire_eater_red, black, $fire_eater_dark_red, white);
+		}
+
+		&#jack_daniels_link a {
+			@include project_link($jd_grey, $jd_orange, $jd_dark_grey, white);
+		}
+
 
 		@include breakpoint($tablet) {
 			float:left;

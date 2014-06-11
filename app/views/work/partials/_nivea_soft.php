@@ -27,13 +27,13 @@
     
     <figure>
         <a href="/images/work/niveasoft_1.jpg" target="_blank">
-            <img src="/images/work/niveasoft_1.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+            <img src="/images/work/niveasoft_1.jpg" />
         </a>
     </figure>
     
     <figure>
         <a href="/images/work/niveasoft_2.jpg" target="_blank">
-            <img src="/images/work/niveasoft_2.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+            <img src="/images/work/niveasoft_2.jpg" />
         </a>
     </figure>
     
@@ -42,14 +42,14 @@
 <section>
     <figure>
         <a href="/images/work/niveasoft_3.jpg" target="_blank">
-            <img src="/images/work/niveasoft_3.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+            <img src="/images/work/niveasoft_3.jpg" />
         </a>
     </figure>
     
     
     <figure>
         <a href="/images/work/niveasoft_4.jpg" target="_blank">
-            <img src="/images/work/niveasoft_4.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+            <img src="/images/work/niveasoft_4.jpg" />
         </a>
     </figure>
 </section>

@@ -11,7 +11,7 @@
     </p>
 </header>
 
-<section>
+<section class="double_column">
   
     <div class="button_wrapper">
         <a href="/work" class="button back_button">
@@ -26,30 +26,32 @@
     </div>
     
     <figure>
-        <a href="/images/raw/arsite_1.png" target="_blank">
-            <img src="/images/work/arsite_1.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        <a href="/images/raw/arsite_3.png" target="_blank">
+            <img src="/images/work/arsite_3.jpg" />
         </a>
     </figure>
-    
+</section>
+
+<section  class="double_column">
     <figure>
-        <a href="/images/raw/arsite_2.png" target="_blank">
-            <img src="/images/work/arsite_2.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        <a href="/images/raw/arsite_1.png" target="_blank">
+            <img src="/images/work/arsite_1.jpg" />
         </a>
     </figure>
+</section>
     
+<section>
+    <figure>
+        <a href="/images/raw/arsite_4.png" target="_blank">
+            <img src="/images/work/arsite_4.jpg" />
+        </a>
+    </figure>
 </section>
 
 <section>
     <figure>
-        <a href="/images/raw/arsite_3.png" target="_blank">
-            <img src="/images/work/arsite_3.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
-        </a>
-    </figure>
-    
-    
-    <figure>
-        <a href="/images/raw/arsite_4.png" target="_blank">
-            <img src="/images/work/arsite_4.jpg" title="Please excuse the awfully low res images, but it's all I could get of the project now that it's not live any more :("/>
+        <a href="/images/raw/arsite_2.png" target="_blank">
+            <img src="/images/work/arsite_2.jpg" />
         </a>
     </figure>
 </section>

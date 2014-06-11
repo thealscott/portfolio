@@ -2,13 +2,13 @@
 
 return array(
 	'handles' => array (
+		'fire_eater',
+		'jack_daniels',
 		'tropicana',
+		'agency_republic',
 		'disney',
-		'smirnoff',
 		'nivea',
 		'nivea_soft',
-		'jack_daniels',
-		'fire_eater',
-		'agency_republic'
+		'smirnoff',		
 	)
 );
