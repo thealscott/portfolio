@@ -6,9 +6,6 @@
 
     <p id="intro_addendum">
         I remember when I first joined Republic, I was drafted in to help on the new agency website. 3 years and 2 complete restarts later, we actually built it! The main lesson was how hard it is to get anything done on internal projects. However, the site we made was fantastic. I worked primarily on the frontend styles and CMS templates, with another dev working on the backend stuff.
-        <br><br>
-        Sadly (since AR's merger with Critical Mass) the site has come down, so these screenshots and the article linked below are the only remaining vestiges of that piece of work. 
-    </p>
 </header>
 
 <section class="double_column">
@@ -22,6 +19,12 @@
     <div class="button_wrapper">
         <a href="https://econsultancy.com/blog/64236-10-responsive-digital-agency-websites" target="_blank" class="button">
             Read the rave review
+        </a>
+    </div>
+
+    <div class="button_wrapper">
+        <a href="http://agencyrepublic.com" target="_blank" class="button">
+            Check it out
         </a>
     </div>
     

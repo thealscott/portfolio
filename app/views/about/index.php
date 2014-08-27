@@ -33,19 +33,19 @@
 		</p>
 
 		<p>
-			Now I'm a pretty decent developer (even if I do say so myself). I'd describe myself as a <strong>full-stack dev</strong> that leans a little to the front-end side. I've worked on small builds as a solo dev as well as on larger builds with a team in both dedicated <strong>front-end</strong> and <strong>back-end</strong> roles.
+			Now I'm a pretty decent developer (even if I do say so myself). I lean a little to the front-end side of things, but I also have plenty of backend experience. I've worked on small builds as a solo dev as well as on larger builds with a team in both dedicated <strong>front-end</strong> and <strong>back-end</strong> roles.
 		</p>
 
 		<h2>
 			Skills and Talents
 		</h2>
 		<ul>
-			<li>PHP (&amp; MVC frameworks)</li>
-			<li>OOP principles</li>
-			<li>RESTful architecture</li>
 			<li>Good old HTML5/CSS3</li>
 			<li>SASS &amp; LESS preprocessors</li>
 			<li>Responsive and Mobile web principles</li>
+			<li>PHP (&amp; MVC frameworks)</li>
+			<li>OOP principles</li>
+			<li>RESTful architecture</li>
 			<li>JavaScript</li>
 			<li>Facebook API</li>
 			<li>A touch of Photoshop</li>
