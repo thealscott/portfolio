@@ -13,7 +13,7 @@
     </div>
     <?php endforeach; ?>
 
-    <!-- <div id="side_projects">
+    <?php /* <div id="side_projects">
 	    <h2 title="Things wot I built out of boredom or annoyance, mostly.">
 			Experiments and Side Projects
 		</h2>
@@ -35,7 +35,7 @@
 				<a href="/spotify" id="spotify_button" class="button" title="Get right with Spotify URIs">Fire drop animation</a>
 			</div>
 		</div>
-	</div> -->
+	</div> */ ?>
     
 </section>
 
